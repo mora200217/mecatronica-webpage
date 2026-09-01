@@ -1,0 +1,41 @@
+{
+  "pitch": "El ingeniero mecatrónico UNAL diseña, integra y pone a marchar sistemas donde la mecánica, la electrónica y el software no se pueden separar. La industria colombiana lo necesita en planta, en diseño y en I+D.",
+  "sectors": [
+    {
+      "name": "Automatización y manufactura",
+      "body": "Líneas de ensamble, PLC, robótica industrial, visión de máquina y mantenimiento predictivo.",
+      "examples": ["Alimentos", "Automotriz", "Empaque"]
+    },
+    {
+      "name": "Energía e infraestructura",
+      "body": "Instrumentación, control de procesos, integridad de activos y digitalización de plantas.",
+      "examples": ["Hidrocarburos", "Generación", "Agua"]
+    },
+    {
+      "name": "Agroindustria",
+      "body": "Maquinaria, postcosecha, invernaderos y trazabilidad. Mecatrónica aplicada al campo.",
+      "examples": ["Café", "Flores", "Lácteos"]
+    },
+    {
+      "name": "Salud y dispositivos",
+      "body": "Prótesis, equipos de rehabilitación, instrumentación clínica y regulación técnica.",
+      "examples": ["Biomédica", "Labs clínicos"]
+    },
+    {
+      "name": "Movilidad y robótica de servicio",
+      "body": "Vehículos, AGV, drones y plataformas móviles para logística urbana e industrial.",
+      "examples": ["Logística", "Defensa civil"]
+    },
+    {
+      "name": "Emprendimiento de producto",
+      "body": "Hardware + firmware + mecánica de precisión. Del taller del 411 a un prototipo vendible.",
+      "examples": ["Startups", "Oficinas de diseño"]
+    }
+  ],
+  "partners": [
+    { "name": "Plantas de alimentos y bebidas", "role": "Automatización de líneas" },
+    { "name": "Integradores de PLC y robótica", "role": "Integración y commissioning" },
+    { "name": "Sector energético", "role": "Control e instrumentación" },
+    { "name": "Clínicas y centros de rehab", "role": "Dispositivos y mantenimiento" }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "filters": [
+    { "id": "academicos", "label": "Académicos" },
+    { "id": "comunidad", "label": "Comunidad" },
+    { "id": "tesis", "label": "Tesis" }
+  ],
+  "items": [
+    {
+      "id": "e1",
+      "month": "Septiembre",
+      "day": "05",
+      "title": "Cátedra de aniversario: 25 años de Mecatrónica UNAL",
+      "place": "Auditorio CyT",
+      "type": "academicos"
+    },
+    {
+      "id": "e2",
+      "month": "Septiembre",
+      "day": "12",
+      "title": "Recorrido por laboratorios del edificio 411",
+      "place": "DIMM",
+      "type": "comunidad"
+    },
+    {
+      "id": "e3",
+      "month": "Septiembre",
+      "day": "19",
+      "title": "Sustentaciones de trabajo de grado — cohorte 2026-1",
+      "place": "CADE de Ingeniería",
+      "type": "tesis"
+    },
+    {
+      "id": "e4",
+      "month": "Octubre",
+      "day": "03",
+      "title": "Encuentro de egresados y feria de prácticas",
+      "place": "Plaza Che / Aulas de Ingeniería",
+      "type": "comunidad"
+    }
+  ]
+}

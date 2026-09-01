@@ -1,0 +1,27 @@
+{
+  "program": "Ingeniería Mecatrónica",
+  "faculty": "Facultad de Ingeniería",
+  "university": "Universidad Nacional de Colombia",
+  "campus": "Sede Bogotá",
+  "snies": "16939",
+  "sia": "2548",
+  "credits": 179,
+  "semesters": 10,
+  "created": 2001,
+  "title": "Ingeniero(a) Mecatrónico(a)",
+  "birthday": {
+    "years": 25,
+    "headline": "25 años formando sistemas que piensan con las manos",
+    "kicker": "Pumpleaños 2026",
+    "body": "El programa nació en 2001 para integrar mecánica, electrónica, control y computación. Esta página arranca como la vitrina del cumpleaños de la carrera y queda lista para convertirse en la casa digital de estudiantes y egresados."
+  },
+  "tagline": "Diseñar máquinas autónomas para el país que las necesita.",
+  "contact": {
+    "coordinator": "Pedro Fabián Cárdenas Herrera",
+    "email": "pfcardenash@unal.edu.co",
+    "building": "Edificio 411, oficina 205",
+    "address": "Av. NQS (Carrera 30) No. 45-03, Bogotá",
+    "phone": "(+57) (1) 316 5000 Ext. 11106"
+  },
+  "disclaimer": "MVP de contenido. Datos institucionales tomados de fuentes públicas de la Facultad. Perfiles de egresados, ofertas y algunos nombres de laboratorios son ilustrativos para demostrar el producto."
+}

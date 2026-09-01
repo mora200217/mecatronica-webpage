@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "sia",
+    "title": "SIA — Historia académica",
+    "group": "Estudiantes",
+    "description": "Inscripciones, notas y recibos.",
+    "url": "https://sia.unal.edu.co"
+  },
+  {
+    "slug": "correo",
+    "title": "Correo UNAL",
+    "group": "Estudiantes",
+    "description": "Identidad institucional @unal.edu.co.",
+    "url": "https://correo.unal.edu.co"
+  },
+  {
+    "slug": "bibliotecas",
+    "title": "Sistema de Bibliotecas",
+    "group": "Estudiantes",
+    "description": "Catálogo, bases de datos y CyT.",
+    "url": "https://bibliotecas.unal.edu.co"
+  },
+  {
+    "slug": "hermes",
+    "title": "Hermes — Investigación",
+    "group": "Investigación",
+    "description": "Grupos, proyectos y convocatorias.",
+    "url": "https://www.hermes.unal.edu.co"
+  },
+  {
+    "slug": "laboratorios",
+    "title": "Laboratorios UNAL",
+    "group": "Investigación",
+    "description": "Directorio de laboratorios de la Universidad.",
+    "url": "https://www.laboratorios.unal.edu.co"
+  },
+  {
+    "slug": "facultad",
+    "title": "Facultad de Ingeniería",
+    "group": "Institucional",
+    "description": "Sitio oficial de la Facultad, sede Bogotá.",
+    "url": "https://ingenieria.bogota.unal.edu.co"
+  },
+  {
+    "slug": "programa",
+    "title": "Ficha del programa",
+    "group": "Institucional",
+    "description": "Página oficial de Ingeniería Mecatrónica.",
+    "url": "https://ingenieria.bogota.unal.edu.co/es/programas-academicos/ingenieria-mecatronica/"
+  },
+  {
+    "slug": "malla-oficial",
+    "title": "Malla curricular (PDF)",
+    "group": "Institucional",
+    "description": "Acuerdo 6 de 2022 del Consejo de Facultad.",
+    "url": "https://ingenieria.bogota.unal.edu.co/images/recursos/pregrado/ingenieriaMecatronica/Malla_Curricular_Mecatronica_Acuerdo_6_2022.pdf"
+  },
+  {
+    "slug": "pep",
+    "title": "Proyecto Educativo del Programa",
+    "group": "Institucional",
+    "description": "PEP de Ingeniería Mecatrónica.",
+    "url": "https://ingenieria.bogota.unal.edu.co/images/recursos/pregrado/ingenieriaMecatronica/PEP_Ingenier%C3%ADaMecatr%C3%B3nica.pdf"
+  },
+  {
+    "slug": "bienestar",
+    "title": "Bienestar Facultad",
+    "group": "Comunidad",
+    "description": "Acompañamiento, cultura y deporte.",
+    "url": "https://ingenieria.bogota.unal.edu.co"
+  }
+]

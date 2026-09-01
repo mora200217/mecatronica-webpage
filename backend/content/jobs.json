@@ -1,0 +1,47 @@
+[
+  {
+    "id": "job-1",
+    "title": "Practicante de automatización",
+    "company": "Integrador de líneas — Bogotá",
+    "type": "Práctica",
+    "area": "Automatización",
+    "deadline": "2026-09-30",
+    "body": "Apoyo en tableros, documentación EPLAN y puesta en marcha de celdas con PLC. Semestres 8–10."
+  },
+  {
+    "id": "job-2",
+    "title": "Ingeniero de planta junior",
+    "company": "Alimentos — Sabana de Bogotá",
+    "type": "Tiempo completo",
+    "area": "Mantenimiento",
+    "deadline": "2026-10-15",
+    "body": "Confiabilidad de empaque, sensores y paros. Se valora experiencia en laboratorios de automatización."
+  },
+  {
+    "id": "job-3",
+    "title": "Tesis en empresa — visión de máquina",
+    "company": "Agroindustria",
+    "type": "Trabajo de grado",
+    "area": "Visión / control",
+    "deadline": "2026-09-20",
+    "body": "Clasificación de producto en banda. Cupo para un trabajo de grado con tutor DIMM y co-tutor de planta."
+  },
+  {
+    "id": "job-4",
+    "title": "Firmware de dispositivos médicos",
+    "company": "Startup de rehab",
+    "type": "Medio tiempo",
+    "area": "Embebidos",
+    "deadline": "2026-10-01",
+    "body": "STM32, protocolos y pruebas. Ideal si cursaste microcontroladores y control."
+  },
+  {
+    "id": "job-5",
+    "title": "Diseño de máquina especial",
+    "company": "Taller metalmecánico",
+    "type": "Contrato",
+    "area": "Diseño",
+    "deadline": "2026-11-01",
+    "body": "CAD, elementos de máquinas y lista de materiales. Un semestre en oficina técnica."
+  }
+]

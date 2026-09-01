@@ -1,0 +1,59 @@
+{
+  "note": "Fichas ilustrativas del MVP. El modelo (empresa, rol, mentoría) es el que migrará a Supabase.",
+  "people": [
+    {
+      "name": "Laura Méndez",
+      "cohort": "2014",
+      "role": "Líder de automatización",
+      "company": "Planta de bebidas — Bogotá",
+      "city": "Bogotá",
+      "focus": "PLC, OEE, robótica de paletizado",
+      "mentorship": true
+    },
+    {
+      "name": "Andrés Ríos",
+      "cohort": "2017",
+      "role": "Ingeniero de control",
+      "company": "Integrador industrial",
+      "city": "Medellín",
+      "focus": "Motion control y safety",
+      "mentorship": true
+    },
+    {
+      "name": "Camila Torres",
+      "cohort": "2019",
+      "role": "Hardware engineer",
+      "company": "Dispositivos de rehab",
+      "city": "Bogotá",
+      "focus": "Embebidos y biomecánica",
+      "mentorship": false
+    },
+    {
+      "name": "Julián Vargas",
+      "cohort": "2011",
+      "role": "Fundador",
+      "company": "Taller de máquinas especiales",
+      "city": "Cali",
+      "focus": "Diseño mecatrónico a la medida",
+      "mentorship": true
+    },
+    {
+      "name": "Natalia Gómez",
+      "cohort": "2021",
+      "role": "Investigadora junior",
+      "company": "Maestría Automatización UNAL",
+      "city": "Bogotá",
+      "focus": "Robótica y visión",
+      "mentorship": false
+    },
+    {
+      "name": "Felipe Arias",
+      "cohort": "2016",
+      "role": "Mantenimiento predictivo",
+      "company": "Sector energético",
+      "city": "Barrancabermeja",
+      "focus": "Instrumentación y confiabilidad",
+      "mentorship": true
+    }
+  ]
+}

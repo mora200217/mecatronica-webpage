@@ -1,0 +1,44 @@
+[
+  {
+    "year": 2026,
+    "title": "Celda colaborativa para paletizado de cajas de bajo peso",
+    "authors": "M. Herrera, S. Díaz",
+    "modality": "Trabajo de grado en empresa",
+    "tags": ["robótica", "seguridad"]
+  },
+  {
+    "year": 2026,
+    "title": "Control de invernadero con red de sensores de bajo costo",
+    "authors": "A. Beltrán",
+    "modality": "Investigación",
+    "tags": ["IoT", "control"]
+  },
+  {
+    "year": 2025,
+    "title": "Prótesis de mano con sintonía de impedancia",
+    "authors": "C. Ruiz, D. Peña",
+    "modality": "Investigación",
+    "tags": ["biomecánica", "embebidos"]
+  },
+  {
+    "year": 2025,
+    "title": "Retrofit de torno convencional a CNC educativo",
+    "authors": "J. Molina",
+    "modality": "Proyecto aplicado",
+    "tags": ["manufactura", "motion"]
+  },
+  {
+    "year": 2024,
+    "title": "Gemelo digital de una línea de llenado",
+    "authors": "L. Castro",
+    "modality": "Trabajo de grado en empresa",
+    "tags": ["industria 4.0"]
+  },
+  {
+    "year": 2024,
+    "title": "AGV de pasillo estrecho con fusión de sensores",
+    "authors": "P. Suárez, N. León",
+    "modality": "Investigación",
+    "tags": ["robótica móvil"]
+  }
+]

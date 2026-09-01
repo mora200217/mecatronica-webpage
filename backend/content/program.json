@@ -1,0 +1,107 @@
+{
+  "about": "El programa vive en el Departamento de Ingeniería Mecánica y Mecatrónica. Aquí se concentra lo que un estudiante pregunta el primer mes: quién enseña, dónde se trabaja con las manos y con qué grupos se puede investigar.",
+  "faculty": [
+    {
+      "name": "Pedro Fabián Cárdenas Herrera",
+      "role": "Coordinador curricular",
+      "area": "Robótica y control",
+      "email": "pfcardenash@unal.edu.co",
+      "real": true
+    },
+    {
+      "name": "Docente — Diseño de máquinas",
+      "role": "Planta DIMM",
+      "area": "Diseño mecánico y elementos de máquinas",
+      "email": "coocurim_bog@unal.edu.co",
+      "real": false
+    },
+    {
+      "name": "Docente — Electrónica y embebidos",
+      "role": "Planta DIMM",
+      "area": "Electrónica digital, microcontroladores",
+      "email": "coocurim_bog@unal.edu.co",
+      "real": false
+    },
+    {
+      "name": "Docente — Manufactura",
+      "role": "Planta DIMM",
+      "area": "Procesos, CNC, materiales",
+      "email": "coocurim_bog@unal.edu.co",
+      "real": false
+    },
+    {
+      "name": "Docente — Automatización",
+      "role": "Planta DIMM",
+      "area": "PLC, sensores, actuadores",
+      "email": "coocurim_bog@unal.edu.co",
+      "real": false
+    },
+    {
+      "name": "Docente — Control",
+      "role": "Planta DIMM",
+      "area": "Señales, control clásico y moderno",
+      "email": "coocurim_bog@unal.edu.co",
+      "real": false
+    }
+  ],
+  "labs": [
+    {
+      "name": "Laboratorio de Automatización",
+      "building": "Edificio 411",
+      "github": "https://github.com/mecatronica-unal/lab-automatizacion",
+      "body": "Bancos de PLC, sensores industriales e HMI. Prácticas de cableado, ladder y puesta en marcha."
+    },
+    {
+      "name": "Laboratorio de Robótica",
+      "building": "Edificio 411",
+      "github": "https://github.com/mecatronica-unal/lab-robotica",
+      "body": "Brazos, móviles y ROS. Repositorio con packs de simulación y rúbricas de laboratorio."
+    },
+    {
+      "name": "Laboratorio de Control",
+      "building": "Edificio 411",
+      "github": "https://github.com/mecatronica-unal/lab-control",
+      "body": "Plantas térmicas, motor DC y levitación. Scripts de identificación y sintonía."
+    },
+    {
+      "name": "Laboratorio de Manufactura",
+      "building": "Talleres DIMM",
+      "github": "https://github.com/mecatronica-unal/lab-manufactura",
+      "body": "CNC, metrología y procesos. Listas de seguridad y CAM de ejemplo."
+    },
+    {
+      "name": "Laboratorio de Electrónica y Embebidos",
+      "building": "Edificio 411",
+      "github": "https://github.com/mecatronica-unal/lab-embebidos",
+      "body": "PCB, firmware y buses. Plantillas PlatformIO y reglas de laboratorio."
+    },
+    {
+      "name": "Laboratorio de Mecatrónica / prototipos",
+      "building": "Edificio 411",
+      "github": "https://github.com/mecatronica-unal/lab-prototipos",
+      "body": "Integración mecánica + electrónica + código para proyectos de curso y tesis."
+    }
+  ],
+  "groups": [
+    {
+      "name": "Control, automatización y robótica",
+      "line": "Sistemas autónomos y motion control",
+      "hermes": "https://www.hermes.unal.edu.co"
+    },
+    {
+      "name": "Diseño y desarrollo de productos",
+      "line": "Máquinas, mecanismos y diseño mecatrónico",
+      "hermes": "https://www.hermes.unal.edu.co"
+    },
+    {
+      "name": "Materiales y manufactura",
+      "line": "Procesos, automatización de planta y sostenibilidad",
+      "hermes": "https://www.hermes.unal.edu.co"
+    },
+    {
+      "name": "Biomecánica y dispositivos",
+      "line": "Rehabilitación, órtesis y medición de movimiento",
+      "hermes": "https://www.hermes.unal.edu.co"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "pumpleanos-25",
+    "title": "La carrera cumple 25 años y abre su casa digital",
+    "date": "2026-09-01",
+    "kicker": "Comunidad",
+    "image": "/media/facultad-401.jpg",
+    "excerpt": "Estudiantes, egresados y docentes inauguran un espacio común: historia, malla, industria y un orquestador hacia los sistemas UNAL.",
+    "body": "En 2001 el Consejo Académico creó el programa para responder a la automatización de la industria colombiana. Un cuarto de siglo después, el Pumpleaños no es solo una fiesta: es la excusa para dejar un sitio que la siguiente generación pueda editar sin reescribirlo desde cero.\n\nEsta primera versión concentra noticias, puentes a SIA y Hermes, y un explorador de malla. El contenido vive en archivos JSON listos para migrar a Supabase."
+  },
+  {
+    "slug": "laboratorio-abierto",
+    "title": "Laboratorios DIMM abren jornadas de puerta abierta en el 411",
+    "date": "2026-08-20",
+    "kicker": "Programa",
+    "image": "/media/aulas-ing.jpg",
+    "excerpt": "Robótica, control y manufactura muestran bancos de prueba y repositorios de prácticas en GitHub.",
+    "body": "Durante la semana de aniversario los laboratorios del Departamento de Ingeniería Mecánica y Mecatrónica reciben visitas guiadas. Cada espacio publica un repositorio con prácticas, listas de equipos y cómo pedir inducción.\n\nEl objetivo es que un estudiante de primeros semestres sepa a quién escribir y qué aprender antes de meter las manos en un PLC o un brazo."
+  },
+  {
+    "slug": "industria-4",
+    "title": "Mesa con industria: automatización, agro y salud",
+    "date": "2026-08-12",
+    "kicker": "Industria",
+    "image": "/media/ingenierias.jpg",
+    "excerpt": "Empresas socias del área curricular conversan sobre prácticas, tesis en empresa y perfiles que sí contratan.",
+    "body": "La mesa reúne automatización industrial, agroindustria y dispositivos biomédicos. No es una feria de stands: cada invitado trae un problema real y un cupo de práctica o de trabajo de grado.\n\nLas ofertas quedan publicadas en la pestaña de empleos de este mismo sitio."
+  },
+  {
+    "slug": "egresados-mapa",
+    "title": "Mapa vivo de egresados: de planta a investigación",
+    "date": "2026-07-28",
+    "kicker": "Egresados",
+    "image": "/media/school-eng.jpg",
+    "excerpt": "La red de egresados deja de ser un Excel y se vuelve directorio consultable por industria y ciudad.",
+    "body": "El directorio del MVP es ilustrativo, pero el modelo de datos ya contempla empresa, rol, ciudad y disposición a mentoría. Cuando pase a Supabase, cada egresado podrá actualizar su ficha sin tocar código."
+  }
+]
