@@ -13,8 +13,8 @@ export default function Puentes() {
     <div className="wrap">
       <SectionTitle kicker="Orquestador">Puentes UNAL</SectionTitle>
       <p>
-        Un solo lugar para salir a los sistemas que ya existen. Django resuelve <code>/go/slug/</code> y redirige. La
-        siguiente generación solo edita <code>redirects.json</code>.
+        Un solo lugar para salir a los sistemas que ya existen. Django resuelve <code>/go/atajo/</code> y redirige;
+        los atajos se agregan desde el panel de administración.
       </p>
       {groups.map((group) => (
         <section key={group}>

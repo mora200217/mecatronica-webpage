@@ -12,7 +12,7 @@ export default function Noticias() {
   return (
     <div className="wrap">
       <SectionTitle kicker="CMS / blog">Noticias</SectionTitle>
-      <p>Edita <code>backend/content/news.json</code> para publicar. El siguiente paso es una tabla <code>posts</code> en Supabase.</p>
+      <p>Lo que va pasando en el programa. Cada entrada se publica desde el panel de administración.</p>
       <div className="grid-cards">
         {posts.map((post) => (
           <Link key={post.slug} className="card" to={`/noticias/${post.slug}`} style={{ textDecoration: "none" }}>

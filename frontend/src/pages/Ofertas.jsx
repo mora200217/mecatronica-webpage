@@ -17,7 +17,7 @@ export default function Ofertas() {
   return (
     <div className="wrap">
       <SectionTitle kicker="Empleo y práctica">Ofertas laborales</SectionTitle>
-      <p className="note">Listado de demostración. En producción cada oferta saldrá de Supabase y se podrá filtrar por semestre y modalidad.</p>
+      <p className="note">Prácticas, trabajos de grado y vacantes que llegan al programa. Se publican desde el panel de administración.</p>
       <div className="filter-row">
         {types.map((t) => (
           <button key={t} aria-pressed={type === t} onClick={() => setType(t)}>

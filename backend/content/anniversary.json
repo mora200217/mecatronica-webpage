@@ -1,0 +1,82 @@
+{
+  "kicker": "2001 · 2026",
+  "headline": "Feliz cumpleaños, Mecatrónica",
+  "lead": "Veinticinco años desde que el Acuerdo 14 creó el programa. Dos días de celebración en la Sede Bogotá: industria, egresados y la pregunta de siempre, qué sigue.",
+  "years": 25,
+  "logo": "/media/aniversario/logo-25.png",
+  "logoInk": "/media/aniversario/logo-25-ink.png",
+  "banner": "/media/aniversario/banner-25.jpg",
+  "startsAt": "2026-09-17T08:15:00-05:00",
+  "endsAt": "2026-09-18T19:00:00-05:00",
+  "dateLabel": "17 y 18 de septiembre de 2026",
+  "venue": "Auditorio Ciencia y Tecnología · Universidad Nacional, Sede Bogotá",
+  "cta": {
+    "label": "Los 25 años, contados",
+    "to": "/historia"
+  },
+  "contact": {
+    "email": "depingmm_bog@unal.edu.co",
+    "phone": "(+57 601) 316 5320 ext. 14062"
+  },
+  "highlights": [
+    {
+      "id": "challenge",
+      "title": "Mecatrónica Challenge",
+      "body": "Olimpiadas, pósteres y talento estudiantil durante todo el jueves."
+    },
+    {
+      "id": "conecta",
+      "title": "Mecatrónica Conecta",
+      "body": "Networking entre academia e industria, con muestra industrial abierta."
+    },
+    {
+      "id": "voces",
+      "title": "Voces de Mecatrónica",
+      "body": "Egresados contando qué hicieron con la carrera, y el lanzamiento del sitio de memoria."
+    }
+  ],
+  "days": [
+    {
+      "id": "jueves",
+      "label": "Jueves 17",
+      "date": "17 de septiembre de 2026",
+      "theme": "Transformación Digital Industrial",
+      "agenda": [
+        { "time": "08:15", "end": "08:30", "title": "Apertura del evento", "track": "acto" },
+        { "time": "08:30", "end": "09:00", "title": "TDI en Acción: casos de éxito", "note": "Robot.com", "track": "industria" },
+        { "time": "09:00", "end": "09:30", "title": "TDI en Acción: casos de éxito", "note": "Siemens", "track": "industria" },
+        { "time": "09:30", "end": "10:00", "title": "TDI en Acción: casos de éxito", "note": "Robotics 4.0", "track": "industria" },
+        { "time": "10:00", "end": "10:30", "title": "TDI en Acción: casos de éxito", "note": "Ingeniería Mecatrónica UNAL", "track": "industria" },
+        { "time": "10:30", "end": "14:00", "title": "Mecatrónica Challenge", "note": "Olimpiadas · pósteres · talento estudiantil", "track": "estudiantes" },
+        { "time": "10:30", "end": "16:00", "title": "Mecatrónica Conecta", "note": "Networking academia–industria", "track": "industria" },
+        { "time": "14:15", "end": "14:45", "title": "Acto conmemorativo: 25 años de Ingeniería Mecatrónica", "note": "Palabras institucionales", "track": "acto" },
+        { "time": "14:45", "end": "15:30", "title": "De la automatización industrial a la autonomía industrial", "track": "industria" },
+        { "time": "15:30", "end": "16:00", "title": "Break", "track": "pausa" },
+        { "time": "16:00", "end": "17:30", "title": "Foro: la Mecatrónica como motor de la Transformación Digital Industrial en Colombia", "track": "foro" },
+        { "time": "17:30", "end": "18:00", "title": "Acto cultural", "track": "acto" }
+      ]
+    },
+    {
+      "id": "viernes",
+      "label": "Viernes 18",
+      "date": "18 de septiembre de 2026",
+      "theme": "Egresados y los próximos 25 años",
+      "agenda": [
+        { "time": "08:10", "end": "08:30", "title": "Mecatrónica Talks", "note": "Ana Sofía Aponte", "track": "egresados" },
+        { "time": "08:30", "end": "08:50", "title": "Mecatrónica Talks", "note": "Óscar Bustos", "track": "egresados" },
+        { "time": "08:50", "end": "09:10", "title": "Mecatrónica Talks", "note": "Sara Jiménez", "track": "egresados" },
+        { "time": "09:10", "end": "09:30", "title": "Mecatrónica Talks", "note": "Camilo Pinzón", "track": "egresados" },
+        { "time": "09:30", "end": "09:50", "title": "Mecatrónica Talks", "note": "Vanesa González", "track": "egresados" },
+        { "time": "09:50", "end": "10:10", "title": "Mecatrónica Talks", "note": "Andrés Holguín", "track": "egresados" },
+        { "time": "10:10", "end": "10:30", "title": "Mecatrónica Talks", "note": "Edgar Sepúlveda", "track": "egresados" },
+        { "time": "10:30", "end": "12:00", "title": "Foro académico Mecatrónica 2051", "note": "Los próximos 25 años", "track": "foro" },
+        { "time": "14:00", "end": "14:30", "title": "Lanzamiento de los sitios Histórica Mecatrónica–Egresados y Reconecta UNAL", "track": "acto" },
+        { "time": "14:30", "end": "16:00", "title": "Foro de egresados: experiencias, retos y aprendizajes", "track": "egresados" },
+        { "time": "16:00", "end": "16:15", "title": "Break", "track": "pausa" },
+        { "time": "16:15", "end": "18:00", "title": "Entrega de reconocimientos", "track": "acto" },
+        { "time": "18:00", "end": "19:00", "title": "Mocktail, foto oficial y cierre de la celebración", "track": "acto" }
+      ]
+    }
+  ],
+  "credit": "Programación del aniversario · Departamento de Ingeniería Mecánica y Mecatrónica, Sede Bogotá."
+}

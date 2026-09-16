@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import BlockNav from "../components/BlockNav.jsx";
+import BirthdayBand from "../components/BirthdayBand.jsx";
+import HeroCarousel from "../components/HeroCarousel.jsx";
 import SectionTitle from "../components/SectionTitle.jsx";
 import { getJSON } from "../api.js";
 
@@ -8,12 +9,14 @@ export default function Home() {
   const [site, setSite] = useState(null);
   const [news, setNews] = useState([]);
   const [events, setEvents] = useState(null);
+  const [anniversary, setAnniversary] = useState(null);
   const [filter, setFilter] = useState("academicos");
 
   useEffect(() => {
     getJSON("/api/site").then(setSite);
     getJSON("/api/news").then(setNews);
     getJSON("/api/events").then(setEvents);
+    getJSON("/api/anniversary").then(setAnniversary);
   }, []);
 
   if (!site || !events) return <p className="wrap">Cargando…</p>;
@@ -22,18 +25,7 @@ export default function Home() {
 
   return (
     <>
-      <section
-        className="hero"
-        style={{ backgroundImage: "url(/media/facultad-401.jpg)" }}
-      >
-        <span className="hero-label">Edificio 401 · Facultad de Ingeniería · UNAL</span>
-        <div className="hero-inner">
-          <span className="hero-chip">{site.birthday.kicker}</span>
-          <h1>{site.birthday.headline}</h1>
-          <p>{site.birthday.body}</p>
-        </div>
-        <BlockNav variant="hero" />
-      </section>
+      <HeroCarousel slides={site.hero} />
 
       <div className="wrap">
         <div className="grid-3" style={{ marginBottom: "2rem" }}>
@@ -51,7 +43,11 @@ export default function Home() {
             </Link>
           ))}
         </div>
+      </div>
 
+      {anniversary ? <BirthdayBand data={anniversary} /> : null}
+
+      <div className="wrap">
         <div className="grid-2">
           <section>
             <SectionTitle kicker="Comunidad">Noticias</SectionTitle>

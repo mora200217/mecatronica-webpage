@@ -15,6 +15,41 @@
     "kicker": "Pumpleaños 2026",
     "body": "El programa nació en 2001 para integrar mecánica, electrónica, control y computación. Esta página arranca como la vitrina del cumpleaños de la carrera y queda lista para convertirse en la casa digital de estudiantes y egresados."
   },
+  "hero": [
+    {
+      "image": "/media/aniversario/banner-25.jpg",
+      "label": "Aniversario 2001 – 2026",
+      "kicker": "Pumpleaños 25",
+      "title": "Feliz cumpleaños, Mecatrónica",
+      "body": "Veinticinco años del programa, celebrados el 17 y 18 de septiembre en el Auditorio CyT.",
+      "accent": true,
+      "cta": { "label": "Ver la celebración", "href": "#aniversario" }
+    },
+    {
+      "image": "/media/facultad-401.jpg",
+      "label": "Edificio 401 · Facultad de Ingeniería",
+      "kicker": "Ingeniería Mecatrónica · UNAL",
+      "title": "Diseñar máquinas autónomas para el país que las necesita",
+      "body": "Mecánica, electrónica, control y computación en un solo programa de la Universidad Nacional, Sede Bogotá.",
+      "cta": { "label": "Conoce el programa", "to": "/programa" }
+    },
+    {
+      "image": "/media/aulas-ing.jpg",
+      "label": "Aulas de Ingeniería",
+      "kicker": "Plan de estudios",
+      "title": "179 créditos y una malla que puedes explorar",
+      "body": "Diez semestres, prerrequisitos visibles y el 20% en libre elección para armar tu propio camino.",
+      "cta": { "label": "Abrir la malla", "to": "/malla" }
+    },
+    {
+      "image": "/media/cyt.jpg",
+      "label": "Edificio de Ciencia y Tecnología",
+      "kicker": "Comunidad",
+      "title": "Egresados que ya están moviendo la industria",
+      "body": "Perfiles, tesis y ofertas: lo que pasa después de la última asignatura también es parte de la carrera.",
+      "cta": { "label": "Ver egresados", "to": "/egresados" }
+    }
+  ],
   "tagline": "Diseñar máquinas autónomas para el país que las necesita.",
   "contact": {
     "coordinator": "Pedro Fabián Cárdenas Herrera",

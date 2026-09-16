@@ -1,45 +1,151 @@
 {
   "intro": "La Mecatrónica en la Nacional no aparece de un decreto aislado: nace del Departamento de Ingeniería Mecánica, de la automatización industrial de los ochenta y de un grupo gestor interdisciplinario que en 1997 puso el proyecto sobre la mesa de Facultad.",
+  "stats": [
+    {
+      "id": "anos",
+      "value": 25,
+      "kind": "count",
+      "label": "años del programa",
+      "detail": "Del Acuerdo 14 de 2001 al aniversario de 2026."
+    },
+    {
+      "id": "creditos",
+      "value": 179,
+      "kind": "count",
+      "label": "créditos del plan",
+      "detail": "56 de fundamentación, 87 disciplinares y 36 de libre elección."
+    },
+    {
+      "id": "semestres",
+      "value": 10,
+      "kind": "count",
+      "label": "semestres, jornada diurna",
+      "detail": "Admisión semestral desde 2002-I."
+    },
+    {
+      "id": "promocion",
+      "value": 2007,
+      "kind": "year",
+      "label": "primera promoción",
+      "detail": "El 30 de marzo se graduaron los tres primeros ingenieros mecatrónicos."
+    }
+  ],
+  "eras": [
+    { "id": "origen", "label": "Origen", "range": "1997 – 2001" },
+    { "id": "arranque", "label": "Arranque", "range": "2002 – 2007" },
+    { "id": "consolidacion", "label": "Consolidación", "range": "2009 – 2014" },
+    { "id": "hoy", "label": "Hoy", "range": "2015 – 2026" }
+  ],
   "timeline": [
     {
       "year": "1997",
+      "era": "origen",
       "title": "El proyecto entra a Facultad",
-      "body": "Un grupo de profesores de Mecánica, Sistemas, Industrial y Ciencias presenta la creación de la carrera. El Consejo de Facultad la ve como oferta sensible a la innovación tecnológica del país."
+      "body": "Un grupo de profesores de Mecánica, Sistemas, Industrial y Ciencias presenta la creación de la carrera. El Consejo de Facultad la ve como oferta sensible a la innovación tecnológica del país.",
+      "figure": { "value": "4", "label": "departamentos en el grupo gestor" },
+      "tags": ["Grupo gestor", "Consejo de Facultad"],
+      "image": "/media/school-eng.jpg"
     },
     {
       "year": "2001",
+      "era": "origen",
       "title": "Nace el programa",
-      "body": "El Acuerdo 14 del Consejo Académico crea Ingeniería Mecatrónica. SNIES 16939. El propósito: fundamentar procesos automatizados y modernizar sectores productivos."
+      "body": "El Acuerdo 14 del Consejo Académico crea Ingeniería Mecatrónica. El propósito: fundamentar procesos automatizados y modernizar sectores productivos.",
+      "figure": { "value": "SNIES 16939", "label": "registro del programa" },
+      "tags": ["Acuerdo 14", "Consejo Académico"],
+      "image": "/media/facultad-401.jpg"
     },
     {
       "year": "2002-I",
+      "era": "arranque",
       "title": "Primera cohorte",
-      "body": "Arranca la admisión semestral, jornada diurna, 10 semestres y 179 créditos. El programa queda adscrito al área curricular de Ingeniería Mecánica y Mecatrónica."
+      "body": "Arranca la admisión semestral, jornada diurna, 10 semestres y 179 créditos. El programa queda adscrito al área curricular de Ingeniería Mecánica y Mecatrónica.",
+      "figure": { "value": "10", "label": "semestres del plan" },
+      "tags": ["Primera cohorte", "Admisión semestral"],
+      "image": "/media/aulas-ing.jpg"
     },
     {
       "year": "2007",
+      "era": "arranque",
       "title": "Primera promoción",
-      "body": "El 30 de marzo se gradúan los primeros tres ingenieros mecatrónicos de la Universidad Nacional en Bogotá."
+      "body": "El 30 de marzo se gradúan los primeros tres ingenieros mecatrónicos de la Universidad Nacional en Bogotá.",
+      "figure": { "value": "3", "label": "primeros graduados" },
+      "tags": ["Egresados", "Hito"],
+      "image": "/media/ingenierias.jpg"
     },
     {
       "year": "2009–2014",
+      "era": "consolidacion",
       "title": "Reforma al Acuerdo 033",
-      "body": "El plan se alinea con fundamentación, componente disciplinar y 20% de libre elección. El Acuerdo 018 de 2014 consolida la estructura de créditos."
+      "body": "El plan se alinea con fundamentación, componente disciplinar y 20% de libre elección. El Acuerdo 018 de 2014 consolida la estructura de créditos.",
+      "figure": { "value": "20%", "label": "de libre elección" },
+      "tags": ["Acuerdo 033", "Acuerdo 018"],
+      "image": "/media/cyt.jpg"
     },
     {
       "year": "2011",
+      "era": "consolidacion",
       "title": "Acreditación de alta calidad",
-      "body": "El Ministerio de Educación reconoce el programa (Resolución 4683). El ciclo de autoevaluación sigue abierto."
+      "body": "El Ministerio de Educación reconoce el programa mediante la Resolución 4683. El ciclo de autoevaluación sigue abierto.",
+      "figure": { "value": "Res. 4683", "label": "Ministerio de Educación" },
+      "tags": ["Acreditación", "Autoevaluación"],
+      "image": "/media/school-eng.jpg"
     },
     {
       "year": "2022",
+      "era": "hoy",
       "title": "Malla vigente",
-      "body": "El Acuerdo 6 de 2022 del Consejo de Facultad actualiza el plan. Sigue en 179 créditos: 56 de fundamentación, 87 disciplinares y 36 de libre elección."
+      "body": "El Acuerdo 6 de 2022 del Consejo de Facultad actualiza el plan. Sigue en 179 créditos: 56 de fundamentación, 87 disciplinares y 36 de libre elección.",
+      "figure": { "value": "179", "label": "créditos vigentes" },
+      "tags": ["Acuerdo 6", "Plan de estudios"],
+      "image": "/media/aulas-ing.jpg"
     },
     {
       "year": "2026",
-      "title": "Pumpleaños 25",
-      "body": "La comunidad abre este sitio: no para reemplazar a la Facultad, sino para orquestar lo que el estudiante usa todos los días y dejar memoria editable."
+      "era": "hoy",
+      "title": "25 años y este sitio",
+      "body": "La comunidad celebra el aniversario y abre esta página: no para reemplazar a la Facultad, sino para orquestar lo que el estudiante usa todos los días y dejar memoria editable.",
+      "figure": { "value": "25", "label": "años de programa" },
+      "tags": ["Aniversario", "Memoria"],
+      "image": "/media/aniversario/banner-25.jpg"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/media/facultad-401.jpg",
+      "title": "Edificio 401",
+      "caption": "La Facultad de Ingeniería, casa del programa desde su creación.",
+      "credit": "Wikimedia Commons"
+    },
+    {
+      "src": "/media/cyt.jpg",
+      "title": "Edificio de Ciencia y Tecnología",
+      "caption": "El auditorio CyT, sede de los actos conmemorativos de los 25 años.",
+      "credit": "Wikimedia Commons"
+    },
+    {
+      "src": "/media/aulas-ing.jpg",
+      "title": "Aulas de Ingeniería",
+      "caption": "Donde ocurren las asignaturas de fundamentación de los primeros semestres.",
+      "credit": "Wikimedia Commons"
+    },
+    {
+      "src": "/media/school-eng.jpg",
+      "title": "Facultad de Ingeniería",
+      "caption": "Fachada histórica de la Facultad en la Sede Bogotá.",
+      "credit": "Wikimedia Commons"
+    },
+    {
+      "src": "/media/ingenierias.jpg",
+      "title": "Campus y comunidad",
+      "caption": "El campus de la Nacional, contexto cotidiano de la carrera.",
+      "credit": "Wikimedia Commons"
+    },
+    {
+      "src": "/media/aniversario/banner-25.jpg",
+      "title": "25 años de Mecatrónica",
+      "caption": "Imagen oficial del aniversario 2001–2026.",
+      "credit": "Facultad de Ingeniería, UNAL"
     }
   ]
 }
