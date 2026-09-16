@@ -86,9 +86,10 @@ Si de momento solo tienes la IP (por ejemplo `168.119.x.x`):
 POSTGRES_PASSWORD=...clave larga...
 DJANGO_SECRET_KEY=...la que generaste...
 DJANGO_DEBUG=false
-DJANGO_ALLOWED_HOSTS=168.119.x.x,backend
-DJANGO_CORS_ORIGINS=http://168.119.x.x
+DJANGO_ALLOWED_HOSTS=*
+DJANGO_CORS_ORIGINS=*
 DJANGO_CSRF_TRUSTED_ORIGINS=http://168.119.x.x
+DJANGO_SECURE_COOKIES=false
 DJANGO_SUPERUSER_USERNAME=admin
 DJANGO_SUPERUSER_PASSWORD=...otra clave larga...
 DJANGO_SUPERUSER_EMAIL=tu@correo
@@ -101,9 +102,9 @@ WEB_PORT=80
 make prod
 ```
 
-Eso construye las imágenes y deja nginx escuchando en el puerto 80. En el navegador: `http://IP_DEL_SERVIDOR`. El panel: `http://IP_DEL_SERVIDOR/admin/`.
+Eso construye las imágenes y deja nginx escuchando en el puerto 80. En el navegador: `http://IP_DEL_SERVIDOR`. El panel: `http://IP_DEL_SERVIDOR/admin/`. La API: `http://IP_DEL_SERVIDOR/api/health`.
 
-Postgres y Django no se publican a internet; solo nginx.
+No abras el puerto 8000. Nginx habla con Django por la red interna de Docker.
 
 Para ver si levantó: `make prod-logs`. Para actualizar después de un `git push`: `cd /opt/mecatronica && make prod-update`.
 

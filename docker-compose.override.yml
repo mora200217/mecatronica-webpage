@@ -10,6 +10,7 @@ services:
     command: python manage.py runserver 0.0.0.0:8000
     environment:
       DJANGO_DEBUG: "true"
+      PUBLIC_SITE_URL: http://localhost:5173/
       DJANGO_SUPERUSER_USERNAME: ${DJANGO_SUPERUSER_USERNAME:-admin}
       DJANGO_SUPERUSER_PASSWORD: ${DJANGO_SUPERUSER_PASSWORD:-mecatronica}
       DJANGO_SUPERUSER_EMAIL: ${DJANGO_SUPERUSER_EMAIL:-admin@localhost}

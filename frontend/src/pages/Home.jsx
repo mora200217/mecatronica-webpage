@@ -11,13 +11,32 @@ export default function Home() {
   const [events, setEvents] = useState(null);
   const [anniversary, setAnniversary] = useState(null);
   const [filter, setFilter] = useState("academicos");
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    getJSON("/api/site").then(setSite);
-    getJSON("/api/news").then(setNews);
-    getJSON("/api/events").then(setEvents);
-    getJSON("/api/anniversary").then(setAnniversary);
+    Promise.all([
+      getJSON("/api/site"),
+      getJSON("/api/news"),
+      getJSON("/api/events"),
+      getJSON("/api/anniversary"),
+    ])
+      .then(([siteData, newsData, eventsData, anniversaryData]) => {
+        setSite(siteData);
+        setNews(newsData);
+        setEvents(eventsData);
+        setAnniversary(anniversaryData);
+      })
+      .catch((err) => setError(err.message));
   }, []);
+
+  if (error) {
+    return (
+      <p className="wrap">
+        No pude hablar con la API ({error}). Prueba recargar. Si estás en el servidor,
+        revisa <code>DJANGO_ALLOWED_HOSTS</code> en el <code>.env</code>.
+      </p>
+    );
+  }
 
   if (!site || !events) return <p className="wrap">Cargando…</p>;
 

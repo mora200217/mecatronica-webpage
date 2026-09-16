@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.contrib import admin
 from django.utils.html import format_html
 
@@ -6,6 +7,7 @@ from . import models
 admin.site.site_header = "Ingeniería Mecatrónica UNAL"
 admin.site.site_title = "Mecatrónica · CMS"
 admin.site.index_title = "Edita el contenido del sitio. La malla curricular se queda fuera: se genera con un script."
+admin.site.site_url = settings.SITE_URL
 
 
 class SingletonAdmin(admin.ModelAdmin):

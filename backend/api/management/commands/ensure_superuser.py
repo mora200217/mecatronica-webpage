@@ -22,5 +22,11 @@ class Command(BaseCommand):
             self.stdout.write(f"El usuario {username} ya existe.")
             return
 
-        user_model.objects.create_superuser(username=username, email=email, password=password)
+        try:
+            user_model.objects.create_superuser(
+                username=username, email=email, password=password
+            )
+        except Exception as exc:
+            self.stderr.write(f"No se pudo crear el usuario {username}: {exc}")
+            return
         self.stdout.write(self.style.SUCCESS(f"Usuario del admin creado: {username}"))

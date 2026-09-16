@@ -7,7 +7,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 WORKDIR /app
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends curl \
+    && apt-get install -y --no-install-recommends curl gosu \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt ./
@@ -17,11 +17,11 @@ COPY . .
 
 RUN chmod +x entrypoint.sh \
     && useradd --create-home --uid 1000 app \
-    && mkdir -p staticfiles \
+    && mkdir -p staticfiles mediafiles \
     && chown -R app:app /app
-USER app
 
 EXPOSE 8000
 
-ENTRYPOINT ["./entrypoint.sh"]
-CMD ["gunicorn", "config.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "3", "--timeout", "60", "--access-logfile", "-"]
+# Arranca como root para ajustar el volumen de fotos y luego baja a `app`.
+ENTRYPOINT ["/bin/sh", "/app/entrypoint.sh"]
+CMD ["gunicorn", "config.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "2", "--timeout", "60", "--access-logfile", "-"]
