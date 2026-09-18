@@ -84,7 +84,7 @@ Antes de arrancar, el DNS del dominio (y `www` si lo usas) tiene que apuntar a l
 
 ### 4. Arranca el sitio con HTTPS
 
-En el DNS del dominio crea un registro **A** (y otro para `www` si lo vas a usar) hacia la IP del servidor. Espera a que resuelva (`ping tudominio.co`). En el `.env` del servidor:
+En el DNS del dominio crea un registro **A** (y otro para `www` si lo vas a usar) hacia la IP del servidor. Espera a que resuelva (`ping ingmecatronicaunal.site`). En el `.env` del servidor:
 
 ```
 POSTGRES_PASSWORD=...clave larga...
@@ -94,7 +94,7 @@ DJANGO_ALLOWED_HOSTS=backend
 DJANGO_SUPERUSER_USERNAME=admin
 DJANGO_SUPERUSER_PASSWORD=...otra clave larga...
 DJANGO_SUPERUSER_EMAIL=tu@correo
-SITE_DOMAIN=tudominio.co, www.tudominio.co
+SITE_DOMAIN=ingmecatronicaunal.site
 ACME_EMAIL=tu@correo
 ```
 
@@ -102,7 +102,7 @@ ACME_EMAIL=tu@correo
 make prod
 ```
 
-Caddy escucha en 80 y 443, pide el certificado a Let's Encrypt y lo renueva solo. El sitio queda en `https://tudominio.co`. El panel: `https://tudominio.co/admin/`. La API: `https://tudominio.co/api/health`.
+Caddy escucha en 80 y 443, pide el certificado a Let's Encrypt y lo renueva solo. El sitio queda en `https://ingmecatronicaunal.site`. El panel: `https://ingmecatronicaunal.site/admin/`. La API: `https://ingmecatronicaunal.site/api/health`.
 
 No abras el puerto 8000. Nginx y Django quedan en la red interna de Docker.
 

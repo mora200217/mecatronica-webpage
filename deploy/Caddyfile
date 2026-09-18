@@ -1,5 +1,7 @@
 {
-	email {$ACME_EMAIL}
+	# Let's Encrypt rechaza admin@localhost. Este correo no necesita
+	# bandeja real; solo un dominio con punto.
+	email {$ACME_EMAIL:admin@ingmecatronicaunal.site}
 }
 
 {$SITE_DOMAIN} {

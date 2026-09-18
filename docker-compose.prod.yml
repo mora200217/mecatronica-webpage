@@ -51,13 +51,20 @@ services:
       - "443:443/udp"
     environment:
       SITE_DOMAIN: ${SITE_DOMAIN:?falta_SITE_DOMAIN_en_el_env}
-      ACME_EMAIL: ${ACME_EMAIL:-${DJANGO_SUPERUSER_EMAIL:-admin@localhost}}
+      ACME_EMAIL: ${ACME_EMAIL:-}
     entrypoint:
       - /bin/sh
       - -c
       - |
           SITE_DOMAIN=$$(printf '%s' "$$SITE_DOMAIN" | sed 's/, */, /g')
           export SITE_DOMAIN
+          case "$$ACME_EMAIL" in
+            ""|*@localhost|*@localhost.*)
+              first=$$(printf '%s' "$$SITE_DOMAIN" | sed 's/,.*//' | tr -d ' ')
+              ACME_EMAIL="admin@$$first"
+              ;;
+          esac
+          export ACME_EMAIL
           exec caddy run --config /etc/caddy/Caddyfile --adapter caddyfile
     volumes:
       - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro

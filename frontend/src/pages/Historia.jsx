@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Gallery from "../components/Gallery.jsx";
+import GrupoGestor from "../components/GrupoGestor.jsx";
 import SectionTitle from "../components/SectionTitle.jsx";
 import StatGrid from "../components/StatGrid.jsx";
 import Timeline from "../components/Timeline.jsx";
@@ -23,6 +24,8 @@ export default function Historia() {
 
       <StatGrid stats={data.stats} />
     </div>
+
+    <GrupoGestor />
 
     <Voices />
 
