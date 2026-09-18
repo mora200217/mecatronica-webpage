@@ -2,6 +2,8 @@
 #   docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
 #
 # El override de desarrollo NO se aplica porque aquí los archivos son explícitos.
+# Caddy toma los puertos 80 y 443, pide el certificado a Let's Encrypt y
+# reenvía a nginx. El frontend no se publica al host para no pelearse con Caddy.
 
 services:
   db:
@@ -11,6 +13,10 @@ services:
     restart: always
     environment:
       DJANGO_DEBUG: "false"
+      SITE_DOMAIN: ${SITE_DOMAIN:-}
+      DJANGO_SECURE_COOKIES: ${DJANGO_SECURE_COOKIES:-true}
+      DJANGO_HSTS_SECONDS: ${DJANGO_HSTS_SECONDS:-31536000}
+      PUBLIC_SITE_URL: ${PUBLIC_SITE_URL:-}
     logging:
       driver: json-file
       options:
@@ -19,34 +25,52 @@ services:
 
   frontend:
     restart: always
-    ports:
-      - "${WEB_PORT:-80}:80"
+    expose:
+      - "80"
     depends_on:
       backend:
         condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1/healthz || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 6
+      start_period: 20s
     logging:
       driver: json-file
       options:
         max-size: "10m"
         max-file: "3"
 
-  # HTTPS automático con Let's Encrypt. Solo arranca con:
-  #   WEB_PORT=8080 docker compose ... --profile tls up -d
   caddy:
     image: caddy:2-alpine
-    profiles: ["tls"]
     restart: always
     ports:
       - "80:80"
       - "443:443"
+      - "443:443/udp"
     environment:
-      SITE_DOMAIN: ${SITE_DOMAIN:-localhost}
+      SITE_DOMAIN: ${SITE_DOMAIN:?falta_SITE_DOMAIN_en_el_env}
+      ACME_EMAIL: ${ACME_EMAIL:-${DJANGO_SUPERUSER_EMAIL:-admin@localhost}}
+    entrypoint:
+      - /bin/sh
+      - -c
+      - |
+          SITE_DOMAIN=$$(printf '%s' "$$SITE_DOMAIN" | sed 's/, */, /g')
+          export SITE_DOMAIN
+          exec caddy run --config /etc/caddy/Caddyfile --adapter caddyfile
     volumes:
       - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
       - caddy-data:/data
       - caddy-config:/config
     depends_on:
-      - frontend
+      frontend:
+        condition: service_healthy
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
 
 volumes:
   caddy-data:

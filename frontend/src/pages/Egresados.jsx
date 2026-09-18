@@ -12,7 +12,7 @@ export default function Egresados() {
     if (!data) return [];
     const needle = q.toLowerCase();
     return data.people.filter((p) =>
-      `${p.name} ${p.company} ${p.focus} ${p.city}`.toLowerCase().includes(needle)
+      `${p.name} ${p.company} ${p.focus} ${p.city} ${p.role}`.toLowerCase().includes(needle)
     );
   }, [data, q]);
   if (!data) return <p className="wrap">Cargando…</p>;
@@ -25,21 +25,29 @@ export default function Egresados() {
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
-          placeholder="Buscar por ciudad, empresa o foco"
+          placeholder="Buscar por nombre, ciudad, empresa o foco"
         />
       </div>
       <div className="grid-cards">
         {people.map((p) => (
-          <article key={p.name} className="panel person">
-            <p className="kicker">Cohorte {p.cohort}</p>
+          <article key={p.linkedin || p.name} className="panel person">
+            <p className="kicker">{p.cohort ? `Cohorte ${p.cohort}` : "Egresado/a"}</p>
             <h3>{p.name}</h3>
             <p>
-              {p.role} · {p.company}
+              {p.role}
+              {p.company ? ` · ${p.company}` : ""}
             </p>
             <p className="muted">
-              {p.city} · {p.focus}
+              {[p.city, p.focus].filter(Boolean).join(" · ")}
             </p>
-            {p.mentorship ? <span className="tag">Mentoría</span> : null}
+            <div className="person-actions">
+              {p.mentorship ? <span className="tag">Mentoría</span> : null}
+              {p.linkedin ? (
+                <a className="tag tag-link" href={p.linkedin} target="_blank" rel="noreferrer">
+                  LinkedIn ↗
+                </a>
+              ) : null}
+            </div>
           </article>
         ))}
       </div>

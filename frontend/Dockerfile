@@ -19,6 +19,7 @@ RUN npm run build
 # Imagen de producción: estáticos servidos por nginx, /api y /go al backend
 FROM nginx:1.27-alpine AS runtime
 COPY nginx.conf /etc/nginx/templates/default.conf.template
+COPY nginx-map.conf /etc/nginx/conf.d/00-map.conf
 COPY --from=build /app/dist /usr/share/nginx/html
 ENV BACKEND_ORIGIN=http://backend:8000
 EXPOSE 80

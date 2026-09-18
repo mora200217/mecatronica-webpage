@@ -200,6 +200,7 @@ class Command(BaseCommand):
                 company=person.get("company", ""),
                 city=person.get("city", ""),
                 focus=person.get("focus", ""),
+                linkedin=person.get("linkedin", ""),
                 mentorship=person.get("mentorship", False),
             )
 

@@ -80,57 +80,42 @@ Cambia **todas** las contraseñas. Genera la de Django con:
 python3 -c "import secrets; print(secrets.token_urlsafe(50))"
 ```
 
-Si de momento solo tienes la IP (por ejemplo `168.119.x.x`):
+Antes de arrancar, el DNS del dominio (y `www` si lo usas) tiene que apuntar a la IP del servidor. Producción ya no sirve el sitio solo por IP: Caddy necesita el dominio para sacar el certificado.
+
+### 4. Arranca el sitio con HTTPS
+
+En el DNS del dominio crea un registro **A** (y otro para `www` si lo vas a usar) hacia la IP del servidor. Espera a que resuelva (`ping tudominio.co`). En el `.env` del servidor:
 
 ```
 POSTGRES_PASSWORD=...clave larga...
 DJANGO_SECRET_KEY=...la que generaste...
 DJANGO_DEBUG=false
-DJANGO_ALLOWED_HOSTS=*
-DJANGO_CORS_ORIGINS=*
-DJANGO_CSRF_TRUSTED_ORIGINS=http://168.119.x.x
-DJANGO_SECURE_COOKIES=false
+DJANGO_ALLOWED_HOSTS=backend
 DJANGO_SUPERUSER_USERNAME=admin
 DJANGO_SUPERUSER_PASSWORD=...otra clave larga...
 DJANGO_SUPERUSER_EMAIL=tu@correo
-WEB_PORT=80
+SITE_DOMAIN=tudominio.co, www.tudominio.co
+ACME_EMAIL=tu@correo
 ```
-
-### 4. Arranca el sitio
 
 ```bash
 make prod
 ```
 
-Eso construye las imágenes y deja nginx escuchando en el puerto 80. En el navegador: `http://IP_DEL_SERVIDOR`. El panel: `http://IP_DEL_SERVIDOR/admin/`. La API: `http://IP_DEL_SERVIDOR/api/health`.
+Caddy escucha en 80 y 443, pide el certificado a Let's Encrypt y lo renueva solo. El sitio queda en `https://tudominio.co`. El panel: `https://tudominio.co/admin/`. La API: `https://tudominio.co/api/health`.
 
-No abras el puerto 8000. Nginx habla con Django por la red interna de Docker.
+No abras el puerto 8000. Nginx y Django quedan en la red interna de Docker.
 
-Para ver si levantó: `make prod-logs`. Para actualizar después de un `git push`: `cd /opt/mecatronica && make prod-update`.
+Para ver si levantó: `make prod-logs`. Si el certificado no sale, casi siempre es DNS que aún no apunta o el puerto 80 cerrado en Hetzner.
 
-### 5. HTTPS cuando tengas dominio
-
-En el DNS del dominio crea un registro **A** hacia la IP del servidor. Espera a que resuelva (`ping tudominio.co`). En `.env`:
-
-```
-WEB_PORT=8080
-SITE_DOMAIN=tudominio.co
-DJANGO_ALLOWED_HOSTS=tudominio.co,www.tudominio.co,backend
-DJANGO_CORS_ORIGINS=https://tudominio.co,https://www.tudominio.co
-DJANGO_CSRF_TRUSTED_ORIGINS=https://tudominio.co,https://www.tudominio.co
-```
-
-```bash
-make prod-tls
-```
-
-Caddy pide el certificado a Let's Encrypt y lo renueva solo. El sitio queda en `https://tudominio.co`.
+Para actualizar después de un `git push`: `cd /opt/mecatronica && make prod-update`.
 
 ### Cómo están armados los contenedores
 
 - **db**: `postgres:16-alpine`, datos en el volumen `db-data`. No se expone al exterior en producción.
 - **backend**: Django con gunicorn. Al arrancar espera a Postgres, corre `migrate` y `collectstatic`. Los estáticos del admin los sirve WhiteNoise. Tiene healthcheck en `/api/health`.
-- **frontend**: build de Vite servido por nginx, que además hace de proxy de `/api`, `/go`, `/admin` y `/static` hacia el backend. Por eso todo sale por un solo puerto.
+- **frontend**: build de Vite servido por nginx, que además hace de proxy de `/api`, `/go`, `/admin` y `/static` hacia el backend.
+- **caddy**: termina TLS, redirige HTTP a HTTPS y obtiene el certificado. Es el único servicio publicado en 80/443.
 
 `docker-compose.yml` es la base, `docker-compose.override.yml` es desarrollo (Compose lo aplica solo) y `docker-compose.prod.yml` es el servidor.
 

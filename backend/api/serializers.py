@@ -169,6 +169,7 @@ def alumni_payload() -> dict:
                 "company": person.company,
                 "city": person.city,
                 "focus": person.focus,
+                "linkedin": person.linkedin,
                 "mentorship": person.mentorship,
             }
             for person in models.Alumnus.objects.all()

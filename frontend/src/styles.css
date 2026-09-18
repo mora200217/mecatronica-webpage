@@ -243,6 +243,12 @@ main { padding-bottom: 3rem; }
 .tabs button.active { background: var(--teal); }
 
 .person { display: flex; flex-direction: column; gap: 0.25rem; }
+.person-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.45rem;
+}
 .tag {
   display: inline-block;
   background: var(--paper);
@@ -251,6 +257,11 @@ main { padding-bottom: 3rem; }
   font-size: 0.75rem;
   margin-right: 0.25rem;
 }
+.tag-link {
+  color: inherit;
+  text-decoration: none;
+}
+.tag-link:hover { background: var(--teal); color: var(--ink); }
 
 .malla-toolbar {
   display: flex;
@@ -748,6 +759,135 @@ main { padding-bottom: 3rem; }
   cursor: pointer;
 }
 
+/* ---------- Voces de Mecatrónica ---------- */
+
+.voices {
+  background:
+    linear-gradient(180deg, rgba(7, 31, 24, 0.96) 0%, rgba(8, 38, 30, 0.98) 100%);
+  color: #eef4ef;
+  border-top: 4px solid var(--lime);
+  border-bottom: 4px solid var(--lime);
+  margin: 2.4rem 0;
+  padding: 2.4rem 0 2.2rem;
+}
+.voices-home { margin: 0 0 0; }
+.voices-inner { width: min(1160px, calc(100% - 2rem)); margin: 0 auto; }
+.voices-kicker {
+  font-family: "IBM Plex Mono", monospace;
+  letter-spacing: 0.22em;
+  font-size: 0.75rem;
+  color: var(--lime);
+  margin: 0 0 0.35rem;
+  text-transform: uppercase;
+}
+.voices-head h2 {
+  margin: 0 0 0.45rem;
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  letter-spacing: -0.03em;
+}
+.voices-head p { margin: 0 0 1.4rem; max-width: 40rem; color: #c5d4cc; }
+.voices-stage {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(240px, 0.7fr);
+  gap: 1rem;
+  align-items: start;
+}
+.voices-player {
+  margin: 0;
+  background: #06140f;
+  border: 1px solid rgba(197, 214, 58, 0.28);
+}
+.voices-player video {
+  display: block;
+  width: 100%;
+  max-height: 34rem;
+  background: #000;
+  object-fit: contain;
+}
+.voices-stage-portrait .voices-player video {
+  max-height: 32rem;
+  margin: 0 auto;
+}
+.voices-player figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1rem;
+  align-items: baseline;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.92rem;
+}
+.voices-speaker {
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+.voices-time {
+  margin-left: auto;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  color: var(--lime);
+}
+.voices-rail {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+  max-height: 36rem;
+  overflow: auto;
+}
+.voices-thumb {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 0.7rem;
+  align-items: center;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+  color: inherit;
+  padding: 0.35rem;
+  cursor: pointer;
+  position: relative;
+  font: inherit;
+}
+.voices-thumb img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  display: block;
+}
+.voices-thumb strong { display: block; font-size: 0.82rem; }
+.voices-thumb em {
+  display: block;
+  font-style: normal;
+  color: #9db3aa;
+  font-size: 0.75rem;
+}
+.voices-thumb-on {
+  border-color: var(--lime);
+  background: rgba(197, 214, 58, 0.12);
+}
+.voices-thumb-play {
+  position: absolute;
+  left: 1.55rem;
+  width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 50%;
+  background: rgba(7, 31, 24, 0.72);
+  color: var(--lime);
+  font-size: 0.62rem;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+.voices-more, .voices-credit { margin: 1.2rem 0 0; }
+.voices-credit {
+  color: #9db3aa;
+  font-size: 0.8rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hero-slide, .tl-bullet, .gallery-item img, .tl-track-fill { transition: none; }
   .tl-panel, .party-pulse { animation: none; }
@@ -763,6 +903,8 @@ main { padding-bottom: 3rem; }
   .stat-grid { grid-template-columns: repeat(2, 1fr); }
   .tl-panel { grid-template-columns: 1fr; }
   .tl-panel-side { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: start; }
+  .voices-stage { grid-template-columns: 1fr; }
+  .voices-rail { max-height: none; grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 640px) {
   .block-nav { grid-template-columns: repeat(2, 1fr); }
@@ -774,4 +916,5 @@ main { padding-bottom: 3rem; }
   .party-slot { grid-template-columns: 4.6rem 1fr; }
   .stat-grid { grid-template-columns: 1fr; }
   .tl-panel-side { grid-template-columns: 1fr; }
+  .voices-rail { grid-template-columns: 1fr; }
 }

@@ -1,59 +1,105 @@
 {
-  "note": "Fichas ilustrativas del MVP. El modelo (empresa, rol, mentoría) es el que migrará a Supabase.",
+  "note": "Red de egresadas y egresados del programa. Quienes aparecen con mentoría pueden acompañar a estudiantes en orientación de carrera. Los perfiles salen de sus LinkedIn públicos.",
   "people": [
     {
-      "name": "Laura Méndez",
+      "name": "Sebastián Hernández Reyes",
+      "cohort": "2020",
+      "role": "Senior Machine Learning Engineer",
+      "company": "Mercado Libre",
+      "city": "Bogotá",
+      "focus": "MLOps, robótica, visión por computador y GenAI",
+      "linkedin": "https://www.linkedin.com/in/sebastian-hernandez-reyes-76a0a8148/",
+      "mentorship": true
+    },
+    {
+      "name": "Alejandro Ojeda Olarte",
+      "cohort": "2023",
+      "role": "Roboticist",
+      "company": "AGD Labs",
+      "city": "Nueva York",
+      "focus": "Robótica, hardware e integración en campo; M.Sc. NYU",
+      "linkedin": "https://www.linkedin.com/in/alejandro-ojeda-olarte/",
+      "mentorship": true
+    },
+    {
+      "name": "Vanessa González Duque",
       "cohort": "2014",
-      "role": "Líder de automatización",
-      "company": "Planta de bebidas — Bogotá",
+      "role": "Doctora e investigadora",
+      "company": "Centrale Nantes · LS2N",
+      "city": "Nantes",
+      "focus": "Imagen médica, aprendizaje automático, visión y robótica",
+      "linkedin": "https://www.linkedin.com/in/vanessa-gonzalez-duque-23211514b/",
+      "mentorship": true
+    },
+    {
+      "name": "Valentina Hernández",
+      "cohort": "",
+      "role": "Ingeniera mecatrónica",
+      "company": "Universidad Nacional de Colombia",
       "city": "Bogotá",
-      "focus": "PLC, OEE, robótica de paletizado",
+      "focus": "Ingeniería mecatrónica",
+      "linkedin": "https://www.linkedin.com/in/valentina-hernandez-mo/",
+      "mentorship": false
+    },
+    {
+      "name": "Juan Camilo Dueñas Torres",
+      "cohort": "2020",
+      "role": "Software Engineer, Automation & Intralogistics",
+      "company": "Linde Material Handling",
+      "city": "Aschaffenburg",
+      "focus": "Robótica, sistemas embebidos y automatización; M.Sc. TU Darmstadt",
+      "linkedin": "https://www.linkedin.com/in/jcduenast/",
       "mentorship": true
     },
     {
-      "name": "Andrés Ríos",
-      "cohort": "2017",
-      "role": "Ingeniero de control",
-      "company": "Integrador industrial",
-      "city": "Medellín",
-      "focus": "Motion control y safety",
-      "mentorship": true
+      "name": "Sergio Esteban Quintero Benavides",
+      "cohort": "2022",
+      "role": "PhD Student in Robotics",
+      "company": "Centrale Nantes · LS2N",
+      "city": "Nantes",
+      "focus": "Robótica de cables, control e interacción física; Erasmus Mundus",
+      "linkedin": "https://www.linkedin.com/in/sergio-esteban-quintero-benavides-594695208/",
+      "mentorship": false
     },
     {
-      "name": "Camila Torres",
+      "name": "Camilo Alberto Pinzón Quintero",
       "cohort": "2019",
-      "role": "Hardware engineer",
-      "company": "Dispositivos de rehab",
-      "city": "Bogotá",
-      "focus": "Embebidos y biomecánica",
-      "mentorship": false
-    },
-    {
-      "name": "Julián Vargas",
-      "cohort": "2011",
-      "role": "Fundador",
-      "company": "Taller de máquinas especiales",
-      "city": "Cali",
-      "focus": "Diseño mecatrónico a la medida",
+      "role": "AI Engineer",
+      "company": "Nauta",
+      "city": "Medellín",
+      "focus": "Automatización con agentes de IA, procesos y flotas robóticas",
+      "linkedin": "https://www.linkedin.com/in/capinzonq/",
       "mentorship": true
     },
     {
-      "name": "Natalia Gómez",
-      "cohort": "2021",
-      "role": "Investigadora junior",
-      "company": "Maestría Automatización UNAL",
-      "city": "Bogotá",
-      "focus": "Robótica y visión",
+      "name": "Wilmer David Garzón Cáceres",
+      "cohort": "2022",
+      "role": "Control and Integration Engineer",
+      "company": "Robot.com",
+      "city": "Medellín",
+      "focus": "ROS 2, sistemas embebidos, GPU y control de robots autónomos",
+      "linkedin": "https://www.linkedin.com/in/wilmergarzon/",
       "mentorship": false
     },
     {
-      "name": "Felipe Arias",
-      "cohort": "2016",
-      "role": "Mantenimiento predictivo",
-      "company": "Sector energético",
-      "city": "Barrancabermeja",
-      "focus": "Instrumentación y confiabilidad",
+      "name": "Oscar Bustos",
+      "cohort": "2014",
+      "role": "Information Technology Expert",
+      "company": "Mercado Libre",
+      "city": "Bogotá",
+      "focus": "Arquitectura empresarial, datos, IA y deep learning",
+      "linkedin": "https://www.linkedin.com/in/oscar-bustos/",
       "mentorship": true
+    },
+    {
+      "name": "Juan Sebastián Santacoloma Barrera",
+      "cohort": "2022",
+      "role": "Maintenance Analyst",
+      "company": "Robot.com",
+      "city": "Bogotá",
+      "focus": "Robótica móvil, mantenimiento de flota y control de procesos",
+      "linkedin": "https://www.linkedin.com/in/juansantacoloma/",
+      "mentorship": false
     }
   ]
 }

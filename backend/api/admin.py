@@ -126,6 +126,7 @@ class AlumnusAdmin(admin.ModelAdmin):
     list_editable = ("order",)
     list_filter = ("mentorship", "city", "cohort")
     search_fields = ("name", "company", "focus")
+    fields = ("name", "cohort", "role", "company", "city", "focus", "linkedin", "mentorship", "order")
 
 
 # --------------------------------------------------------------------------

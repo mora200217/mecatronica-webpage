@@ -1,5 +1,5 @@
 {
-  "disclaimer": "Explorador ilustrativo para el MVP. La malla oficial vigente es el Acuerdo 6 de 2022 (PDF en Puentes). Nombres y prerrequisitos se acercan a la estructura pública del programa (179 créditos, 10 semestres) para que la herramienta se sienta usable.",
+  "disclaimer": "Plan de estudios del Acuerdo 6 de 2022 del Consejo de Facultad de Ingeniería. 179 créditos: 56 de fundamentación (47 obligatorios y 9 optativos), 87 disciplinares (81 obligatorios y 6 optativos) y 36 de libre elección. Los prerrequisitos siguen las flechas del PDF oficial; la lengua extranjera (12 créditos extra, 191 en total) no entra en este tablero.",
   "officialPdf": "/go/malla-oficial/",
   "components": [
     {
@@ -10,9 +10,9 @@
     },
     {
       "id": "disciplinar",
-      "label": "Disciplinar / profesional",
+      "label": "Disciplinar",
       "credits": 87,
-      "pct": "48%"
+      "pct": "49%"
     },
     {
       "id": "libre",
@@ -24,62 +24,56 @@
   "areas": [
     {
       "id": "matematicas",
-      "label": "Matemáticas"
+      "label": "Matemáticas, probabilidad y estadística"
     },
     {
-      "id": "ciencias",
-      "label": "Ciencias"
+      "id": "fisica",
+      "label": "Física"
     },
     {
-      "id": "computacion",
-      "label": "Computación"
+      "id": "quimica",
+      "label": "Química"
+    },
+    {
+      "id": "expresion",
+      "label": "Expresión gráfica"
+    },
+    {
+      "id": "informatica",
+      "label": "Informática"
     },
     {
       "id": "electronica",
-      "label": "Electrónica"
+      "label": "Ingeniería electrónica"
     },
     {
       "id": "diseno",
-      "label": "Diseño"
-    },
-    {
-      "id": "manufactura",
-      "label": "Manufactura"
+      "label": "Ingeniería de diseño"
     },
     {
       "id": "control",
-      "label": "Control y robótica"
+      "label": "Automatización, control y robótica"
     },
     {
-      "id": "integracion",
-      "label": "Integración"
+      "id": "materiales",
+      "label": "Materiales y manufactura"
+    },
+    {
+      "id": "investigacion",
+      "label": "Investigación e innovación"
     },
     {
       "id": "gestion",
-      "label": "Gestión"
-    },
-    {
-      "id": "contexto",
-      "label": "Contexto"
+      "label": "Ciencias administrativas y económicas"
     },
     {
       "id": "libre",
-      "label": "Libre"
+      "label": "Libre elección"
     }
   ],
   "courses": [
     {
-      "id": "INTRO",
-      "name": "Ingeniería y desarrollo sostenible",
-      "credits": 3,
-      "semester": 1,
-      "component": "disciplinar",
-      "area": "integracion",
-      "prereqs": [],
-      "summary": "Panorama de la mecatrónica y el impacto de la tecnología."
-    },
-    {
-      "id": "CALC1",
+      "id": "1000004",
       "name": "Cálculo diferencial",
       "credits": 4,
       "semester": 1,
@@ -89,625 +83,610 @@
       "summary": "Límites, derivadas y modelado de cambio."
     },
     {
-      "id": "ALGLIN",
-      "name": "Álgebra lineal",
-      "credits": 4,
-      "semester": 1,
-      "component": "fundamentacion",
-      "area": "matematicas",
-      "prereqs": [],
-      "summary": "Vectores, matrices y sistemas lineales."
-    },
-    {
-      "id": "QUIM",
-      "name": "Química básica",
+      "id": "2015734",
+      "name": "Programación de computadores",
       "credits": 3,
       "semester": 1,
       "component": "fundamentacion",
-      "area": "ciencias",
+      "area": "informatica",
       "prereqs": [],
-      "summary": "Estructura de la materia para materiales y procesos."
+      "summary": "Algoritmos y pensamiento computacional."
     },
     {
-      "id": "COMU",
-      "name": "Competencias comunicativas",
+      "id": "2016509",
+      "name": "Taller de ingeniería electrónica",
+      "credits": 2,
+      "semester": 1,
+      "component": "disciplinar",
+      "area": "electronica",
+      "prereqs": [],
+      "summary": "Práctica inicial de circuitos y laboratorio."
+    },
+    {
+      "id": "2015702",
+      "name": "Ingeniería y desarrollo sostenible",
+      "credits": 3,
+      "semester": 1,
+      "component": "disciplinar",
+      "area": "investigacion",
+      "prereqs": [],
+      "summary": "Impacto de la tecnología y el oficio del ingeniero."
+    },
+    {
+      "id": "2015711",
+      "name": "Dibujo básico",
       "credits": 3,
       "semester": 1,
       "component": "fundamentacion",
-      "area": "contexto",
+      "area": "expresion",
       "prereqs": [],
-      "summary": "Escritura y oralidad para ingeniería."
+      "summary": "Representación gráfica para ingeniería."
     },
     {
-      "id": "CALC2",
+      "id": "1000005",
       "name": "Cálculo integral",
       "credits": 4,
       "semester": 2,
       "component": "fundamentacion",
       "area": "matematicas",
       "prereqs": [
-        "CALC1"
+        "1000004"
       ],
       "summary": "Integrales, series y aplicaciones."
     },
     {
-      "id": "FISMEC",
-      "name": "Física mecánica",
+      "id": "1000003",
+      "name": "Álgebra lineal",
       "credits": 4,
       "semester": 2,
       "component": "fundamentacion",
-      "area": "ciencias",
+      "area": "matematicas",
+      "prereqs": [],
+      "summary": "Vectores, matrices y sistemas lineales."
+    },
+    {
+      "id": "1000019",
+      "name": "Fundamentos de mecánica",
+      "credits": 4,
+      "semester": 2,
+      "component": "fundamentacion",
+      "area": "fisica",
       "prereqs": [
-        "CALC1"
+        "1000004"
       ],
       "summary": "Cinemática, dinámica y energía."
     },
     {
-      "id": "PROG",
-      "name": "Programación de computadores",
+      "id": "2017278",
+      "name": "Tecnología mecánica básica",
       "credits": 3,
       "semester": 2,
-      "component": "fundamentacion",
-      "area": "computacion",
+      "component": "disciplinar",
+      "area": "materiales",
       "prereqs": [],
-      "summary": "Algoritmos, Python/C y pensamiento computacional."
+      "summary": "Procesos y herramientas de taller mecánico."
     },
     {
-      "id": "DIB",
-      "name": "Dibujo de ingeniería",
-      "credits": 3,
-      "semester": 2,
-      "component": "fundamentacion",
-      "area": "diseno",
-      "prereqs": [],
-      "summary": "Representación gráfica y CAD 2D/3D."
-    },
-    {
-      "id": "ECO",
-      "name": "Economía y gestión",
-      "credits": 3,
-      "semester": 2,
-      "component": "fundamentacion",
-      "area": "gestion",
-      "prereqs": [],
-      "summary": "Costos, decisión y entorno productivo."
-    },
-    {
-      "id": "OPT1",
-      "name": "Optativa de fundamentación I",
-      "credits": 3,
-      "semester": 2,
-      "component": "fundamentacion",
-      "area": "matematicas",
-      "prereqs": [
-        "CALC1"
-      ],
-      "summary": "Estadística, biología o herramienta de ingeniería."
-    },
-    {
-      "id": "CALC3",
+      "id": "1000006",
       "name": "Cálculo en varias variables",
       "credits": 4,
       "semester": 3,
       "component": "fundamentacion",
       "area": "matematicas",
       "prereqs": [
-        "CALC2"
+        "1000005"
       ],
-      "summary": "Campos, integrales múltiples y vectorial."
+      "summary": "Campos, integrales múltiples y cálculo vectorial."
     },
     {
-      "id": "FISEM",
-      "name": "Física de electricidad y magnetismo",
+      "id": "1000013",
+      "name": "Probabilidad y estadística fundamental",
+      "credits": 3,
+      "semester": 3,
+      "component": "fundamentacion",
+      "area": "matematicas",
+      "prereqs": [
+        "1000003"
+      ],
+      "summary": "Incertidumbre, muestreo y decisión."
+    },
+    {
+      "id": "1000017",
+      "name": "Fundamentos de electricidad y magnetismo",
       "credits": 4,
       "semester": 3,
       "component": "fundamentacion",
-      "area": "ciencias",
+      "area": "fisica",
       "prereqs": [
-        "FISMEC"
+        "1000019"
       ],
       "summary": "Campos, circuitos y fuerza electromagnética."
     },
     {
-      "id": "ESTAT",
-      "name": "Estática",
-      "credits": 3,
-      "semester": 3,
-      "component": "disciplinar",
-      "area": "diseno",
-      "prereqs": [
-        "FISMEC",
-        "ALGLIN"
-      ],
-      "summary": "Equilibrio de partículas y cuerpos rígidos."
-    },
-    {
-      "id": "CIR1",
+      "id": "2016489",
       "name": "Circuitos eléctricos I",
       "credits": 3,
       "semester": 3,
       "component": "disciplinar",
       "area": "electronica",
       "prereqs": [
-        "FISEM"
+        "2016509"
       ],
       "summary": "Leyes de Kirchhoff, DC y transitorios."
     },
     {
-      "id": "MATER",
-      "name": "Materiales de ingeniería",
+      "id": "2016640",
+      "name": "Principios de estática",
       "credits": 3,
       "semester": 3,
       "component": "disciplinar",
-      "area": "manufactura",
+      "area": "diseno",
       "prereqs": [
-        "QUIM"
+        "1000019",
+        "1000003"
       ],
-      "summary": "Metales, polímeros y selección de materiales."
+      "summary": "Equilibrio de partículas y cuerpos rígidos."
     },
     {
-      "id": "EDO",
+      "id": "1000024",
+      "name": "Principios de química",
+      "credits": 3,
+      "semester": 3,
+      "component": "fundamentacion",
+      "area": "quimica",
+      "prereqs": [],
+      "summary": "Estructura de la materia para materiales y procesos."
+    },
+    {
+      "id": "1000007",
       "name": "Ecuaciones diferenciales",
       "credits": 4,
       "semester": 4,
       "component": "fundamentacion",
       "area": "matematicas",
       "prereqs": [
-        "CALC3"
+        "1000006"
       ],
       "summary": "EDO, Laplace y modelos de sistemas."
     },
     {
-      "id": "DIN",
-      "name": "Dinámica",
+      "id": "LIB-IV-A",
+      "name": "Libre elección",
       "credits": 3,
       "semester": 4,
-      "component": "disciplinar",
-      "area": "diseno",
-      "prereqs": [
-        "ESTAT"
-      ],
-      "summary": "Cinemática y cinética de máquinas."
+      "component": "libre",
+      "area": "libre",
+      "prereqs": [],
+      "summary": "Asignatura de libre elección del componente flexible."
     },
     {
-      "id": "TERMO",
-      "name": "Termodinámica",
-      "credits": 3,
-      "semester": 4,
-      "component": "disciplinar",
-      "area": "manufactura",
-      "prereqs": [
-        "FISMEC"
-      ],
-      "summary": "Energía, ciclos y conversión."
-    },
-    {
-      "id": "CIR2",
-      "name": "Circuitos eléctricos II",
-      "credits": 3,
-      "semester": 4,
-      "component": "disciplinar",
-      "area": "electronica",
-      "prereqs": [
-        "CIR1"
-      ],
-      "summary": "AC, potencia y acoplamiento."
-    },
-    {
-      "id": "OOP",
+      "id": "2016375",
       "name": "Programación orientada a objetos",
       "credits": 3,
       "semester": 4,
       "component": "disciplinar",
-      "area": "computacion",
+      "area": "informatica",
       "prereqs": [
-        "PROG"
+        "2015734"
       ],
       "summary": "Diseño de software para sistemas físicos."
     },
     {
-      "id": "PROB",
-      "name": "Probabilidad y estadística",
-      "credits": 3,
+      "id": "2016495",
+      "name": "Electrónica análoga I",
+      "credits": 4,
       "semester": 4,
-      "component": "fundamentacion",
-      "area": "matematicas",
-      "prereqs": [
-        "CALC2"
-      ],
-      "summary": "Incertidumbre, diseño de experimentos y calidad."
-    },
-    {
-      "id": "SENALES",
-      "name": "Señales y sistemas",
-      "credits": 3,
-      "semester": 5,
-      "component": "disciplinar",
-      "area": "control",
-      "prereqs": [
-        "EDO"
-      ],
-      "summary": "LTI, Fourier y respuesta en frecuencia."
-    },
-    {
-      "id": "SOLIDOS",
-      "name": "Mecánica de sólidos",
-      "credits": 3,
-      "semester": 5,
-      "component": "disciplinar",
-      "area": "diseno",
-      "prereqs": [
-        "ESTAT"
-      ],
-      "summary": "Esfuerzo, deformación y falla."
-    },
-    {
-      "id": "EANA",
-      "name": "Electrónica analógica",
-      "credits": 3,
-      "semester": 5,
       "component": "disciplinar",
       "area": "electronica",
       "prereqs": [
-        "CIR2"
+        "2016489"
       ],
       "summary": "Diodos, transistores y acondicionamiento."
     },
     {
-      "id": "MANUF",
-      "name": "Procesos de manufactura",
+      "id": "2017271",
+      "name": "Principios de dinámica",
+      "credits": 3,
+      "semester": 4,
+      "component": "disciplinar",
+      "area": "diseno",
+      "prereqs": [
+        "2016640"
+      ],
+      "summary": "Cinemática y cinética de máquinas."
+    },
+    {
+      "id": "LIB-IV-B",
+      "name": "Libre elección",
+      "credits": 3,
+      "semester": 4,
+      "component": "libre",
+      "area": "libre",
+      "prereqs": [],
+      "summary": "Asignatura de libre elección del componente flexible."
+    },
+    {
+      "id": "2015703",
+      "name": "Variable compleja",
+      "credits": 4,
+      "semester": 5,
+      "component": "fundamentacion",
+      "area": "matematicas",
+      "prereqs": [
+        "1000007"
+      ],
+      "summary": "Números complejos, funciones y transformadas."
+    },
+    {
+      "id": "OPT-FIS",
+      "name": "Optativa de física",
+      "credits": 3,
+      "semester": 5,
+      "component": "fundamentacion",
+      "area": "fisica",
+      "prereqs": [
+        "1000017"
+      ],
+      "summary": "Optativa de fundamentación en física (3 o 4 créditos según la oferta)."
+    },
+    {
+      "id": "2016506",
+      "name": "Señales y sistemas I",
       "credits": 3,
       "semester": 5,
       "component": "disciplinar",
-      "area": "manufactura",
+      "area": "control",
       "prereqs": [
-        "MATER"
+        "1000007"
       ],
-      "summary": "Arranque, conformado y calidad."
+      "summary": "Sistemas LTI, tiempo continuo y transformadas."
     },
     {
-      "id": "MECAN",
-      "name": "Mecanismos",
+      "id": "2016699",
+      "name": "Estructura de datos",
+      "credits": 3,
+      "semester": 5,
+      "component": "disciplinar",
+      "area": "informatica",
+      "prereqs": [
+        "2016375"
+      ],
+      "summary": "Colecciones, complejidad y bases para software de ingeniería."
+    },
+    {
+      "id": "2017277",
+      "name": "Resistencia de materiales",
       "credits": 3,
       "semester": 5,
       "component": "disciplinar",
       "area": "diseno",
       "prereqs": [
-        "DIN"
+        "2016640"
       ],
-      "summary": "Cadenas cinemáticas y síntesis."
+      "summary": "Esfuerzo, deformación y falla."
     },
     {
-      "id": "CTRL",
-      "name": "Control",
+      "id": "2017256",
+      "name": "Ciencia e ingeniería de materiales",
+      "credits": 3,
+      "semester": 5,
+      "component": "disciplinar",
+      "area": "materiales",
+      "prereqs": [
+        "1000024",
+        "2017278"
+      ],
+      "summary": "Metales, polímeros y selección de materiales."
+    },
+    {
+      "id": "2015159",
+      "name": "Ingeniería económica",
+      "credits": 3,
+      "semester": 6,
+      "component": "fundamentacion",
+      "area": "gestion",
+      "prereqs": [
+        "2015703"
+      ],
+      "summary": "Evaluación de proyectos y decisión económica."
+    },
+    {
+      "id": "2016507",
+      "name": "Señales y sistemas II",
       "credits": 3,
       "semester": 6,
       "component": "disciplinar",
       "area": "control",
       "prereqs": [
-        "SENALES"
+        "2016506"
       ],
-      "summary": "Lazo cerrado, PID y estabilidad."
+      "summary": "Tiempo discreto, muestreo y respuesta en frecuencia."
     },
     {
-      "id": "EDIG",
-      "name": "Electrónica digital",
-      "credits": 3,
+      "id": "2016498",
+      "name": "Electrónica digital I",
+      "credits": 4,
       "semester": 6,
       "component": "disciplinar",
       "area": "electronica",
       "prereqs": [
-        "EANA"
+        "2016495"
       ],
       "summary": "Lógica, HDL y sistemas digitales."
     },
     {
-      "id": "ELEM",
-      "name": "Diseño de elementos de máquinas",
+      "id": "2024045",
+      "name": "Taller de proyectos interdisciplinarios",
+      "credits": 3,
+      "semester": 6,
+      "component": "disciplinar",
+      "area": "investigacion",
+      "prereqs": [
+        "2016699"
+      ],
+      "summary": "Problema real con otras ingenierías. Requiere 52 créditos del programa."
+    },
+    {
+      "id": "2017282",
+      "name": "Diseño mecatrónico",
       "credits": 3,
       "semester": 6,
       "component": "disciplinar",
       "area": "diseno",
       "prereqs": [
-        "SOLIDOS",
-        "MECAN"
+        "2017271",
+        "2017277"
       ],
-      "summary": "Ejes, engranajes, uniones y fatiga."
+      "summary": "Metodología de producto que integra mecanismo, electrónica y control."
     },
     {
-      "id": "SENS",
-      "name": "Sensores y actuadores",
+      "id": "2017273",
+      "name": "Optativa de materiales y manufactura",
       "credits": 3,
       "semester": 6,
       "component": "disciplinar",
-      "area": "control",
+      "area": "materiales",
       "prereqs": [
-        "EANA"
+        "2017256"
       ],
-      "summary": "Transducción, motores y válvulas."
+      "summary": "Optativa disciplinar de la agrupación de materiales y procesos."
     },
     {
-      "id": "NUM",
-      "name": "Métodos numéricos",
-      "credits": 3,
-      "semester": 6,
-      "component": "fundamentacion",
-      "area": "matematicas",
-      "prereqs": [
-        "PROG",
-        "EDO"
-      ],
-      "summary": "Discretización y simulación."
-    },
-    {
-      "id": "MCU",
-      "name": "Microcontroladores",
-      "credits": 3,
-      "semester": 7,
-      "component": "disciplinar",
-      "area": "computacion",
-      "prereqs": [
-        "EDIG",
-        "OOP"
-      ],
-      "summary": "Firmware, timers, ADC y buses."
-    },
-    {
-      "id": "ROB",
-      "name": "Robótica",
-      "credits": 3,
-      "semester": 7,
-      "component": "disciplinar",
-      "area": "control",
-      "prereqs": [
-        "CTRL",
-        "MECAN"
-      ],
-      "summary": "Cinemática, trayectoria y celdas."
-    },
-    {
-      "id": "AUTO",
-      "name": "Automatización industrial",
-      "credits": 3,
-      "semester": 7,
-      "component": "disciplinar",
-      "area": "control",
-      "prereqs": [
-        "SENS",
-        "CTRL"
-      ],
-      "summary": "PLC, HMI y redes de planta."
-    },
-    {
-      "id": "DM1",
-      "name": "Diseño mecatrónico I",
-      "credits": 3,
-      "semester": 7,
-      "component": "disciplinar",
-      "area": "integracion",
-      "prereqs": [
-        "ELEM",
-        "SENS"
-      ],
-      "summary": "Metodología de producto integrado."
-    },
-    {
-      "id": "INGECO",
-      "name": "Ingeniería económica",
+      "id": "OPT-ECO",
+      "name": "Optativa de ciencias económicas",
       "credits": 3,
       "semester": 7,
       "component": "fundamentacion",
       "area": "gestion",
       "prereqs": [
-        "ECO"
+        "2015159"
       ],
-      "summary": "Evaluación de proyectos tecnológicos."
+      "summary": "Optativa de fundamentación en ciencias administrativas y económicas."
     },
     {
-      "id": "OPT2",
-      "name": "Optativa disciplinar",
+      "id": "2016493",
+      "name": "Control",
+      "credits": 4,
+      "semester": 7,
+      "component": "disciplinar",
+      "area": "control",
+      "prereqs": [
+        "2016507"
+      ],
+      "summary": "Lazo cerrado, PID y estabilidad."
+    },
+    {
+      "id": "2017287",
+      "name": "Sensores y actuadores",
       "credits": 3,
       "semester": 7,
       "component": "disciplinar",
       "area": "control",
       "prereqs": [
-        "CTRL"
+        "2016498"
       ],
-      "summary": "Control moderno, visión o redes industriales."
+      "summary": "Transducción, motores y acondicionamiento."
     },
     {
-      "id": "EMB",
-      "name": "Sistemas embebidos",
+      "id": "2025967",
+      "name": "Redes de computadores",
+      "credits": 3,
+      "semester": 7,
+      "component": "disciplinar",
+      "area": "informatica",
+      "prereqs": [
+        "2024045"
+      ],
+      "summary": "Comunicación de datos para sistemas distribuidos."
+    },
+    {
+      "id": "2016753",
+      "name": "Microcontroladores I",
+      "credits": 3,
+      "semester": 7,
+      "component": "disciplinar",
+      "area": "electronica",
+      "prereqs": [
+        "2016498"
+      ],
+      "summary": "Firmware, timers, ADC y buses."
+    },
+    {
+      "id": "OPT-INFO",
+      "name": "Optativa de informática",
+      "credits": 3,
+      "semester": 7,
+      "component": "fundamentacion",
+      "area": "informatica",
+      "prereqs": [
+        "2015734"
+      ],
+      "summary": "Optativa de fundamentación en informática y herramientas de ingeniería."
+    },
+    {
+      "id": "LIB-VIII-A",
+      "name": "Libre / profundización",
       "credits": 3,
       "semester": 8,
-      "component": "disciplinar",
-      "area": "computacion",
-      "prereqs": [
-        "MCU"
-      ],
-      "summary": "RTOS, hardware-software y HMI."
+      "component": "libre",
+      "area": "libre",
+      "prereqs": [],
+      "summary": "Libre elección o profundización.",
+      "note": "Requiere haber aprobado el 70% del programa (unos 125 créditos)."
     },
     {
-      "id": "MOTION",
-      "name": "Control de movimiento",
+      "id": "2017770",
+      "name": "Robótica",
       "credits": 3,
       "semester": 8,
       "component": "disciplinar",
       "area": "control",
       "prereqs": [
-        "CTRL",
-        "ROB"
+        "2016493"
       ],
-      "summary": "Servos, interpolación y safety."
+      "summary": "Cinemática, trayectoria y celdas robotizadas."
     },
     {
-      "id": "CIMS",
-      "name": "Manufactura automatizada",
+      "id": "OPT-AUTO",
+      "name": "Optativa de automatización y control",
       "credits": 3,
       "semester": 8,
       "component": "disciplinar",
-      "area": "manufactura",
+      "area": "control",
       "prereqs": [
-        "AUTO",
-        "MANUF"
+        "2016493"
+      ],
+      "summary": "Optativa disciplinar de automatización, control y robótica."
+    },
+    {
+      "id": "LIB-VIII-B",
+      "name": "Libre / profundización",
+      "credits": 3,
+      "semester": 8,
+      "component": "libre",
+      "area": "libre",
+      "prereqs": [],
+      "summary": "Libre elección o profundización.",
+      "note": "Requiere haber aprobado el 70% del programa (unos 125 créditos)."
+    },
+    {
+      "id": "2017288",
+      "name": "Servomecanismos",
+      "credits": 3,
+      "semester": 8,
+      "component": "disciplinar",
+      "area": "diseno",
+      "prereqs": [
+        "2016753",
+        "2017282"
+      ],
+      "summary": "Accionamientos, lazo de posición y máquinas de movimiento."
+    },
+    {
+      "id": "LIB-VIII-C",
+      "name": "Libre / profundización",
+      "credits": 3,
+      "semester": 8,
+      "component": "libre",
+      "area": "libre",
+      "prereqs": [],
+      "summary": "Libre elección o profundización.",
+      "note": "Requiere haber aprobado el 70% del programa (unos 125 créditos)."
+    },
+    {
+      "id": "LIB-IX-A",
+      "name": "Libre / profundización",
+      "credits": 3,
+      "semester": 9,
+      "component": "libre",
+      "area": "libre",
+      "prereqs": [],
+      "summary": "Libre elección o profundización (3 o 6 créditos según la oferta).",
+      "note": "Requiere haber aprobado el 70% del programa (unos 125 créditos)."
+    },
+    {
+      "id": "LIB-IX-B",
+      "name": "Libre / profundización",
+      "credits": 3,
+      "semester": 9,
+      "component": "libre",
+      "area": "libre",
+      "prereqs": [],
+      "summary": "Libre elección o profundización.",
+      "note": "Requiere haber aprobado el 70% del programa (unos 125 créditos)."
+    },
+    {
+      "id": "LIB-IX-C",
+      "name": "Libre / profundización",
+      "credits": 3,
+      "semester": 9,
+      "component": "libre",
+      "area": "libre",
+      "prereqs": [],
+      "summary": "Libre elección o profundización.",
+      "note": "Requiere haber aprobado el 70% del programa (unos 125 créditos)."
+    },
+    {
+      "id": "2017275",
+      "name": "Proyecto aplicado de ingeniería",
+      "credits": 4,
+      "semester": 9,
+      "component": "disciplinar",
+      "area": "investigacion",
+      "prereqs": [
+        "2017282",
+        "2024045"
+      ],
+      "summary": "Diseñar y construir una máquina en equipo. Requiere 65 créditos del programa."
+    },
+    {
+      "id": "2017280",
+      "name": "Automatización de procesos de manufactura",
+      "credits": 3,
+      "semester": 9,
+      "component": "disciplinar",
+      "area": "materiales",
+      "prereqs": [
+        "2017278"
       ],
       "summary": "Celdas, CNC y flujo de planta."
     },
     {
-      "id": "PAI",
-      "name": "Proyecto aplicado de ingeniería",
-      "credits": 4,
-      "semester": 8,
-      "component": "disciplinar",
-      "area": "integracion",
-      "prereqs": [
-        "DM1"
-      ],
-      "summary": "Diseñar y construir una máquina en equipo."
-    },
-    {
-      "id": "TALLER",
-      "name": "Taller de proyectos interdisciplinarios",
-      "credits": 3,
-      "semester": 8,
-      "component": "disciplinar",
-      "area": "integracion",
-      "prereqs": [
-        "INTRO"
-      ],
-      "summary": "Problema real con otras ingenierías."
-    },
-    {
-      "id": "LIB0",
-      "name": "Libre elección — profundización temprana",
-      "credits": 3,
-      "semester": 8,
-      "component": "libre",
-      "area": "libre",
-      "prereqs": [],
-      "summary": "Semillero, práctica o cátedra de facultad."
-    },
-    {
-      "id": "ELE1",
-      "name": "Electiva de profundización I",
-      "credits": 3,
-      "semester": 9,
-      "component": "libre",
-      "area": "libre",
-      "prereqs": [],
-      "summary": "Robótica avanzada, visión, IoT o biomecánica."
-    },
-    {
-      "id": "ELE2",
-      "name": "Electiva de profundización II",
-      "credits": 3,
-      "semester": 9,
-      "component": "libre",
-      "area": "libre",
-      "prereqs": [],
-      "summary": "Línea de maestría o asignatura de otro currículo."
-    },
-    {
-      "id": "CTX1",
-      "name": "Cátedra de contexto / sede",
-      "credits": 3,
-      "semester": 9,
-      "component": "libre",
-      "area": "libre",
-      "prereqs": [],
-      "summary": "Ciudad, territorio y ética pública."
-    },
-    {
-      "id": "TG1",
-      "name": "Trabajo de grado I",
-      "credits": 4,
-      "semester": 9,
-      "component": "disciplinar",
-      "area": "integracion",
-      "prereqs": [
-        "PAI"
-      ],
-      "summary": "Formulación, estado del arte y prototipo inicial."
-    },
-    {
-      "id": "LIB1",
-      "name": "Libre elección I",
-      "credits": 3,
-      "semester": 9,
-      "component": "libre",
-      "area": "libre",
-      "prereqs": [],
-      "summary": "Emprendimiento, arte, lengua o semillero."
-    },
-    {
-      "id": "ELE3",
-      "name": "Electiva de profundización III",
-      "credits": 3,
-      "semester": 10,
-      "component": "libre",
-      "area": "libre",
-      "prereqs": [
-        "ELE1"
-      ],
-      "summary": "Cierre de línea de profundización."
-    },
-    {
-      "id": "LIB2",
-      "name": "Libre elección II",
+      "id": "LIB-X-A",
+      "name": "Libre / profundización",
       "credits": 3,
       "semester": 10,
       "component": "libre",
       "area": "libre",
       "prereqs": [],
-      "summary": "Movilidad, cátedra o práctica."
+      "summary": "Libre elección o profundización.",
+      "note": "Requiere haber aprobado el 70% del programa (unos 125 créditos)."
     },
     {
-      "id": "LIB3",
-      "name": "Libre elección III",
-      "credits": 3,
-      "semester": 10,
-      "component": "libre",
-      "area": "libre",
-      "prereqs": [],
-      "summary": "Complemento flexible del 20%."
-    },
-    {
-      "id": "TG2",
-      "name": "Trabajo de grado II",
-      "credits": 6,
-      "semester": 10,
-      "component": "disciplinar",
-      "area": "integracion",
-      "prereqs": [
-        "TG1"
-      ],
-      "summary": "Implementación, evaluación y sustentación."
-    },
-    {
-      "id": "ETICA",
-      "name": "Ética, ambiente y ejercicio profesional",
-      "credits": 3,
-      "semester": 10,
-      "component": "libre",
-      "area": "contexto",
-      "prereqs": [
-        "INGECO"
-      ],
-      "summary": "Impacto, norma y oficio del ingeniero."
-    },
-    {
-      "id": "LIB4",
-      "name": "Libre elección IV",
-      "credits": 5,
+      "id": "LIB-X-B",
+      "name": "Libre elección",
+      "credits": 9,
       "semester": 10,
       "component": "libre",
       "area": "libre",
       "prereqs": [],
       "summary": "Bloque flexible para completar el 20% de libre elección."
+    },
+    {
+      "id": "2017297",
+      "name": "Trabajo de grado",
+      "credits": 6,
+      "semester": 10,
+      "component": "disciplinar",
+      "area": "investigacion",
+      "prereqs": [
+        "2017275"
+      ],
+      "summary": "Formulación, prototipo y sustentación. Requiere 69 créditos del programa."
     }
   ],
   "totals": {
     "credits": 179,
-    "count": 55
+    "count": 53
   }
 }

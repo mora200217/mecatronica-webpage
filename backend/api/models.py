@@ -200,6 +200,7 @@ class Alumnus(Ordered):
     company = models.CharField("empresa", max_length=180, blank=True)
     city = models.CharField("ciudad", max_length=80, blank=True)
     focus = models.CharField("temas", max_length=200, blank=True)
+    linkedin = models.URLField("LinkedIn", max_length=300, blank=True)
     mentorship = models.BooleanField("abierto a mentoría", default=False)
 
     class Meta(Ordered.Meta):

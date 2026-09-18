@@ -70,7 +70,7 @@ export default function Malla() {
       <p className="note">{data.disclaimer}</p>
       <p>
         <a className="btn btn-navy" href="/go/malla-oficial/">
-          PDF oficial Acuerdo 6 de 2022
+          PDF oficial · Acuerdo 6 de 2022
         </a>
       </p>
 
@@ -164,6 +164,7 @@ export default function Malla() {
             </p>
             <h2>{selected.name}</h2>
             <p>{selected.summary}</p>
+            {selected.note ? <p className="note">{selected.note}</p> : null}
             <p>
               Prerrequisitos:{" "}
               {selected.prereqs.length

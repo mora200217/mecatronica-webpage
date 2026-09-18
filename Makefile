@@ -1,6 +1,6 @@
 COMPOSE_PROD := docker compose -f docker-compose.yml -f docker-compose.prod.yml
 
-.PHONY: help up down logs build restart shell dbshell migrate superuser prod prod-down prod-logs prod-update clean
+.PHONY: help up down logs build restart shell dbshell migrate superuser prod prod-tls prod-down prod-logs prod-update clean
 
 help:
 	@echo "Desarrollo local"
@@ -15,7 +15,7 @@ help:
 	@echo "  make reseed      Reimporta el contenido desde content/*.json (pisa lo editado)"
 	@echo ""
 	@echo "Servidor (Hetzner)"
-	@echo "  make prod        Levanta la versión de producción"
+	@echo "  make prod        Levanta producción con HTTPS (Caddy + Let's Encrypt)"
 	@echo "  make prod-update Trae cambios de git, reconstruye y reinicia"
 	@echo "  make prod-logs   Logs de producción"
 	@echo "  make prod-down   Apaga producción"
@@ -53,11 +53,10 @@ reseed:
 prod:
 	$(COMPOSE_PROD) up -d --build
 
-prod-tls:
-	$(COMPOSE_PROD) --profile tls up -d --build
+prod-tls: prod
 
 prod-down:
-	$(COMPOSE_PROD) --profile tls down
+	$(COMPOSE_PROD) down
 
 prod-logs:
 	$(COMPOSE_PROD) logs -f

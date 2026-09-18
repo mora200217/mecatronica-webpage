@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import BirthdayBand from "../components/BirthdayBand.jsx";
 import HeroCarousel from "../components/HeroCarousel.jsx";
 import SectionTitle from "../components/SectionTitle.jsx";
+import Voices from "../components/Voices.jsx";
 import { getJSON } from "../api.js";
 
 export default function Home() {
@@ -63,6 +64,8 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      <Voices variant="home" />
 
       {anniversary ? <BirthdayBand data={anniversary} /> : null}
 
